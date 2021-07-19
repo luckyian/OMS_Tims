@@ -1,11 +1,12 @@
 const db = require("../models/Users");
-
+// tests = orders
+// test = order
 module.exports = {
 
   create: function(req, res) {
     db.findByIdAndUpdate(
       req.body.id,
-      { $push: { tests: req.body.test } },
+      { $push: { orders: req.body.order } },
       {new: true}
     ).then(info => {
       console.log(info)
