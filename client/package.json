@@ -9,13 +9,13 @@
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "chart.js": "^2.9.4",
-    "firebase": "^8.2.6",
-    "react": "^16.13.1",
-    "react-bootstrap": "^1.4.3",
-    "react-dom": "^16.13.1",
-    "react-firebaseui": "^4.1.0",
+    "firebase": "^8.7.1",
+    "react": "^16.14.0",
+    "react-bootstrap": "^1.6.1",
+    "react-dom": "^16.14.0",
+    "react-firebaseui": "^4.2.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3"
+    "react-scripts": "^3.4.3"
   },
   "scripts": {
     "start": "react-scripts start",
