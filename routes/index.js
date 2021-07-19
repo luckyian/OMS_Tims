@@ -1,10 +1,10 @@
 const path = require("path");
 const router = require("express").Router();
 const userRoutes = require("./api/users");
-const glucoseRoutes = require("./api/glucose")
+const storeRoutes = require("./api/store")
 const medsRoutes = require("./api/meds")
 
-router.use("/api/bloodsugar", glucoseRoutes)
+router.use("/api/bloodsugar", storeRoutes)
 router.use("/api/user", userRoutes)
 router.use("/api/meds", medsRoutes)
 
