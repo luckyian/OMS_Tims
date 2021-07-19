@@ -13,20 +13,26 @@ const UsersSchema = new Schema({
             default: Date.now
         },
         store: Number,
+        chips: [{
+            name: String,
+            sku: {
+                type: Number,
+            },
+            cases: [{
+                date: {
+                    type: Date,
+                    default: Date.now
+                },
+                amount: Number
+            }]
+        }]
         
     }],
     chips: [{
         name: String,
         sku: {
             type: Number,
-        },
-        cases: [{
-            date: {
-                type: Date,
-                default: Date.now
-            },
-            amount: Number
-        }]
+        }
     }]
 })
 
