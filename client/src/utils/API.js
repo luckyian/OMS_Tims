@@ -44,7 +44,7 @@ const API = {
     })
   },
 
-  addNewMed: function(payload) {
+  addNewChip: function(payload) {
     return axios.post("/api/meds/", {
       id: payload.id,
       med: payload.med
