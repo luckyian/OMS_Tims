@@ -1,13 +1,13 @@
 const Users = require("../models/Users");
-
+// meds/med = chip/chips
 module.exports = {
 
-    addNewMedication: function(req, res) {
+    addNewChip: function(req, res) {
         console.log("adding new medication")
         console.log(req.body)
         Users.findByIdAndUpdate(
             req.body.id,
-            { $push: { meds: req.body.med } },
+            { $push: { chips: req.body.chips } },
             {new: true}
         ).then(info => {
             res.json(info)
@@ -20,7 +20,7 @@ module.exports = {
     takeMedication: function(req, res) {
         Users.findOneAndUpdate(
             {"_id": req.body.id,
-            "meds.name":req.body.medName},
+            "chips.name":req.body.chipName},
             { "$push": { "meds.$.doses": req.body.dose } },
             {new: true}
         ).then(info => {
@@ -32,14 +32,14 @@ module.exports = {
         })
     },
 
-    removeMed: function(req, res) {
+    removeChip: function(req, res) {
         console.log("recived call")
         console.log(req.body.med)
         console.log(req.body)
         Users.findOneAndUpdate(
             {"_id": req.body.id,
-            "meds.name": req.body.med},
-            {"$pull": {"meds": { "name": req.body.med } } },
+            "chips.name": req.body.chip},
+            {"$pull": {"chips": { "name": req.body.chip } } },
             {new: true}
         ).then(info => {
             res.json(info)
