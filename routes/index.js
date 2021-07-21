@@ -4,7 +4,7 @@ const userRoutes = require("./api/users");
 const storeRoutes = require("./api/store")
 const medsRoutes = require("./api/meds")
 
-router.use("/api/bloodsugar", storeRoutes)
+router.use("/api/store", storeRoutes)
 router.use("/api/user", userRoutes)
 router.use("/api/meds", medsRoutes)
 
