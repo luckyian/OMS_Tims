@@ -22,6 +22,6 @@ const CreateOrderSchema = new Schema({
         }]
 });
 
-const CreateOrderSchema = mongoose.model("Take Medication", CreateOrderSchema);
+const CreateOrderSchema = mongoose.model("Create Order", CreateOrderSchema);
 
 module.exports = CreateOrderSchema;
