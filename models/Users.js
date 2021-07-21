@@ -19,11 +19,7 @@ const UsersSchema = new Schema({
                 type: Number,
             },
             cases: [{
-                date: {
-                    type: Date,
-                    default: Date.now
-                },
-                amount: Number
+                 type: Number
             }]
         }]
         
