@@ -3,18 +3,19 @@ import { Button, Form, Modal, Alert } from 'react-bootstrap'
 import Local from '../../../utils/localStorage'
 import API from '../../../utils/API'
 import { useAuth } from '../../../contexts/AuthContext'
-
+// chipNameRef = medNameRef
+// potentialChips = potentialMeds
 export default function MedsModal(props) {
 
     const [needText, setNeedText] = useState()
     const [modalError, setModalError] = useState()
-    const medNameRef = useRef()
+    const chipNameRef = useRef()
     const typeRef = useRef()
     const otherNameRef = useRef()
     const { currentUser } = useAuth()
     
 
-    const potentialMeds = [
+    const potentialChips = [
         "2oz Original",
         "2oz Jalapeno",
         "2oz SC&O",
@@ -188,7 +189,7 @@ export default function MedsModal(props) {
     }
 
     function needTextBox() {
-        if(medNameRef.current.value === "Other") {
+        if(chipNameRef.current.value === "Other") {
             setNeedText(true)
         } else {
             setModalError('')
@@ -246,8 +247,8 @@ export default function MedsModal(props) {
             <Form>
                 <Form.Group>
                     <Form.Label>Medication Name</Form.Label>
-                    <Form.Control as="select" ref={medNameRef} onChange={needTextBox}>
-                        {potentialMeds.map(med => (<option>{med}</option>))}
+                    <Form.Control as="select" ref={chipNameRef} onChange={needTextBox}>
+                        {potentialChips.map(chip => (<option>{chip}</option>))}
                         <option>Other</option>
                     </Form.Control>
                 </Form.Group>
