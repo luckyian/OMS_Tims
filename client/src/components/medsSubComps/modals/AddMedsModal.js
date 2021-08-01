@@ -240,7 +240,7 @@ export default function MedsModal(props) {
         centered
         >
         <Modal.Header closeButton>
-            <Modal.Title>Add New Medication</Modal.Title>
+            <Modal.Title>Add New Chip</Modal.Title>
         </Modal.Header>
         <Modal.Body>
         {modalError && <Alert variant="danger">{modalError}</Alert>}
