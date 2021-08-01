@@ -246,7 +246,7 @@ export default function MedsModal(props) {
         {modalError && <Alert variant="danger">{modalError}</Alert>}
             <Form>
                 <Form.Group>
-                    <Form.Label>Medication Name</Form.Label>
+                    <Form.Label>Chip Name</Form.Label>
                     <Form.Control as="select" ref={chipNameRef} onChange={needTextBox}>
                         {potentialChips.map(chip => (<option>{chip}</option>))}
                         <option>Other</option>
@@ -254,16 +254,13 @@ export default function MedsModal(props) {
                 </Form.Group>
                 {needText && (
                 <Form.Group>
-                    <Form.Label>Enter In Other Name</Form.Label>
-                    <Form.Control type='text' ref={otherNameRef} placeholder="medication name"/>
+                    <Form.Label>Enter In Other Chip Name</Form.Label>
+                    <Form.Control type='text' ref={otherNameRef} placeholder="Chip Name"/>
                 </Form.Group>
                 )}
                 <Form.Group>
-                    <Form.Label>Medication Type</Form.Label>
-                    <Form.Control as='select' ref={typeRef} >
-                        <option>Injection</option>
-                        <option>Oral</option>
-                    </Form.Control>
+                    <Form.Label>Sku</Form.Label>
+                    <Form.Control type='text' ref={otherNameRef} placeholder="Chip Sku"/>
                 </Form.Group>
             </Form>
         </Modal.Body>
