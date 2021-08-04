@@ -197,36 +197,36 @@ export default function MedsModal(props) {
         }
     }
 
-    function handleAddMed() {
+    function handleAddChip() {
 
         if(needText && otherNameRef.current.value === "") {
-            return setModalError("Medication must have a name")
+            return setModalError("Chip must have a name")
         }
 
         const payload = {
             id: currentUser.uid,
-            med: {
-                name: medNameRef.current.value,
+            chip: {
+                name: chipNameRef.current.value,
                 type: typeRef.current.value,
-                doses:[]
+                cases:[]
             }
         }
-        API.addNewMed(payload )
+        API.addNewChip(payload )
             .then(({data}) => {
-                Local.setMedsArr(data.meds)
+                Local.setChipsArr(data.chips)
                 handleClose()
             })
             .catch(err => {
                 console.log(err)
                 API.saveTransaction({
-                    apiName: "addNewMed",
+                    apiName: "addNewChip",
                     payload: payload
                 })
-                let tempArr = Local.getMedsArr()
-                tempArr.push(payload.med)
-                Local.setMedsArr(tempArr)
+                let tempArr = Local.getChipsArr()
+                tempArr.push(payload.chip)
+                Local.setChipsArr(tempArr)
                 handleClose()
-                props.setMedError("No connection found.  Data will be stored when connection is reestablished.")
+                props.setChipError("No connection found.  Data will be stored when connection is reestablished.")
             })
     }
 
@@ -260,7 +260,7 @@ export default function MedsModal(props) {
                 )}
                 <Form.Group>
                     <Form.Label>Sku</Form.Label>
-                    <Form.Control type='text' ref={otherNameRef} placeholder="Chip Sku"/>
+                    <Form.Control type='text' ref={typeRef} placeholder="Chip Sku"/>
                 </Form.Group>
             </Form>
         </Modal.Body>
@@ -268,7 +268,7 @@ export default function MedsModal(props) {
             <Button variant="secondary" onClick={handleClose}>
                 Close
             </Button>
-            <Button variant="primary" onClick={handleAddMed}>Enter</Button>
+            <Button variant="primary" onClick={handleAddChip}>Enter</Button>
         </Modal.Footer>
         </Modal>
 
