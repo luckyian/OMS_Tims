@@ -6,7 +6,7 @@ import MedsModal from './medsSubComps/modals/AddMedsModal'
 import AddMedDose from './medsSubComps/modals/AddMedDoseModal'
 import DeleteMedModal from './medsSubComps/modals/DeleteMedModal'
 import Local from '../utils/localStorage'
-import FooterComp from './SharedComponents/Footer'
+// import FooterComp from './SharedComponents/Footer'
 import LineChart from './medsSubComps/testMedChart'
 
 
