@@ -16,12 +16,12 @@ module.exports = {
         res.status(503).end()
         })
     },
-
-    takeMedication: function(req, res) {
+// order/orders = dose/doses
+    orderCase: function(req, res) {
         Users.findOneAndUpdate(
             {"_id": req.body.id,
             "chips.name":req.body.chipName},
-            { "$push": { "meds.$.doses": req.body.dose } },
+            { "$push": { "meds.$.orders": req.body.order } },
             {new: true}
         ).then(info => {
             console.log("worked")
