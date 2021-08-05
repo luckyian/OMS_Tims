@@ -1,11 +1,11 @@
-const Users = require("../models/Users");
+const Stores = require("../models/Stores");
 // meds/med = chip/chips
 module.exports = {
 
     addNewChip: function(req, res) {
         console.log("adding new chip")
         console.log(req.body)
-        Users.findByIdAndUpdate(
+        Stores.findByIdAndUpdate(
             req.body.id,
             { $push: { chips: req.body.chips } },
             {new: true}
@@ -18,10 +18,10 @@ module.exports = {
     },
 // order/orders = dose/doses
     orderCase: function(req, res) {
-        Users.findOneAndUpdate(
+        Stores.findOneAndUpdate(
             {"_id": req.body.id,
             "chips.name":req.body.chipName},
-            { "$push": { "meds.$.orders": req.body.order } },
+            { "$push": { "chips.$.orders": req.body.order } },
             {new: true}
         ).then(info => {
             console.log("worked")
@@ -36,7 +36,7 @@ module.exports = {
         console.log("recived call")
         console.log(req.body.chip)
         console.log(req.body)
-        Users.findOneAndUpdate(
+        Stores.findOneAndUpdate(
             {"_id": req.body.id,
             "chips.name": req.body.chip},
             {"$pull": {"chips": { "name": req.body.chip } } },
