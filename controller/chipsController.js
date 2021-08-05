@@ -3,7 +3,7 @@ const Users = require("../models/Users");
 module.exports = {
 
     addNewChip: function(req, res) {
-        console.log("adding new medication")
+        console.log("adding new chip")
         console.log(req.body)
         Users.findByIdAndUpdate(
             req.body.id,
@@ -34,7 +34,7 @@ module.exports = {
 
     removeChip: function(req, res) {
         console.log("recived call")
-        console.log(req.body.med)
+        console.log(req.body.chip)
         console.log(req.body)
         Users.findOneAndUpdate(
             {"_id": req.body.id,
