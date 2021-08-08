@@ -1,34 +1,28 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-// tests = orders
-// meds = chips
-// store = glucose
-// meds(chips).type = sku
-// meds(chips).doses = cases
+
 const UsersSchema = new Schema({
     _id: String,
-    orders: [{
+    tests: [{
         date: {
             type: Date,
             default: Date.now
         },
-        store: Number,
-        chips: [{
-            name: String,
-            sku: {
-                type: Number,
-            },
-            cases: [{
-                 type: Number
-            }]
-        }]
-        
+        glucose: Number,
+        comment: String
     }],
-    chips: [{
+    meds: [{
         name: String,
-        sku: {
-            type: Number,
-        }
+        type: {
+            type: String,
+        },
+        doses: [{
+            date: {
+                type: Date,
+                default: Date.now
+            },
+            amount: String
+        }]
     }]
 })
 
