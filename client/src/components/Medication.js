@@ -2,42 +2,42 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Container, Accordion, Row, Col, Card, Button, Alert } from 'react-bootstrap'
 import NavbarComponent from './SharedComponents/Navbar'
-import MedsModal from './medsSubComps/modals/AddMedsModal'
-import AddMedDose from './medsSubComps/modals/AddMedDoseModal'
-import DeleteMedModal from './medsSubComps/modals/DeleteMedModal'
+import chipsModal from './chipsSubComps/modals/AddChipsModal'
+import AddChipDose from './chipsSubComps/modals/AddChipDoseModal'
+import DeletechipModal from './chipsSubComps/modals/DeleteChipModal'
 import Local from '../utils/localStorage'
 // import FooterComp from './SharedComponents/Footer'
-import LineChart from './medsSubComps/testMedChart'
+import LineChart from './chipsSubComps/testchipChart'
 
 
 
 
-export default function Medication() {
+export default function chip() {
 
     // const { currentUser } = useAuth()
-    const [showMedModal, setShowMedModal] = useState(false);
+    const [showChipModal, setShowChipModal] = useState(false);
     const [showDoseModal, setShowDoseModal] = useState(false);
     const [showDeleteModal, setShowDeleteModal] = useState(false);
     const [error, setError] = useState(false)
     const [reconnect, setReconnect] = useState(false)
 
-    const medsArr = Local.getMedsArr()
+    const chipsArr = Local.getChipsArr()
 
-    const handleShowMedModal = () => setShowMedModal(true);
+    const handleShowChipModal = () => setShowChipModal(true);
     const handleShowDoseModal = () => {
-        if (medsArr.length > 0) {
+        if (chipsArr.length > 0) {
             setError('')
             setShowDoseModal(true);
         } else {
-            setError("Add a medication to add a dose")
+            setError("Add a chip to add a dose")
         }
     }
     const handleShowDeleteModal = () => {
-        if (medsArr.length > 0) {
+        if (chipsArr.length > 0) {
             setError('')
             setShowDeleteModal(true);
         } else {
-            setError("No Medications to Delete")
+            setError("No chips to Delete")
 
         }
     }
@@ -64,48 +64,48 @@ export default function Medication() {
                     <Card className="acordian">
                         <Card.Header className="acordian">
                             <Accordion.Toggle className="acordianbtn" as={Button} variant="link" eventKey="0">
-                                Medication options
+                                chipication options
                         </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="0">
-                            <Row className="medrow">
+                            <Row className="chiprow">
                                 <Col className='col-md-4'>
-                                    <a className='btn medbtn btn-block' onClick={handleShowDoseModal}>
-                                        Log Medication Dose
+                                    <a className='btn chipbtn btn-block' onClick={handleShowDoseModal}>
+                                        Log chipication Dose
                                     </a>
                                 </Col>
                                 <Col className='col-md-4'>
-                                    <a className='btn medbtn btn-block' onClick={handleShowMedModal}>
-                                        Add new medication
+                                    <a className='btn chipbtn btn-block' onClick={handleShowchipModal}>
+                                        Add new chipication
                                     </a>
                                 </Col>
                                 <Col className='col-md-4'>
-                                    <a className='btn medbtn btn-block' onClick={handleShowDeleteModal}>
-                                        Delete Medication
+                                    <a className='btn chipbtn btn-block' onClick={handleShowDeleteModal}>
+                                        Delete chipication
                                     </a>
                                 </Col>
                             </Row>
                         </Accordion.Collapse>
                     </Card>
                 </Accordion> */}
-                <LineChart />
+                {/* <LineChart /> */}
                 {/* <Button style={styles.button} onClick={handleShowDoseModal}>
-                                    Log Medication Dose
+                                    Log chipication Dose
                                 </Button> */}
 
 
-                {/* <Button style={styles.button} onClick={handleShowMedModal}>
-                                        Add new medication
+                {/* <Button style={styles.button} onClick={handleShowchipModal}>
+                                        Add new chipication
                                     </Button> */}
 
                 {/* <Button style={styles.button} onClick={handleShowDeleteModal}>
-                                    Delete Medication
+                                    Delete chipication
                                 </Button> */}
             </Container>
             {/* <FooterComp /> */}
-            <MedsModal show={showMedModal} setShow={setShowMedModal} setMedError={setError} />
-            <AddMedDose show={showDoseModal} setShow={setShowDoseModal} setMedError={setError} />
-            <DeleteMedModal show={showDeleteModal} setShow={setShowDeleteModal} setMedError={setError} />
+            <chipsModal show={showChipModal} setShow={setShowChipModal} setChipError={setError} />
+            <AddChipDose show={showDoseModal} setShow={setShowDoseModal} setChipError={setError} />
+            <DeleteChipModal show={showDeleteModal} setShow={setShowDeleteModal} setChipError={setError} />
 
         </div>
     )
