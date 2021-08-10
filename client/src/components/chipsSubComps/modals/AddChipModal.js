@@ -5,7 +5,7 @@ import API from '../../../utils/API'
 import { useAuth } from '../../../contexts/AuthContext'
 // chipNameRef = medNameRef
 // potentialChips = potentialMeds
-export default function MedsModal(props) {
+export default function ChipsModal(props) {
 
     const [needText, setNeedText] = useState()
     const [modalError, setModalError] = useState()
