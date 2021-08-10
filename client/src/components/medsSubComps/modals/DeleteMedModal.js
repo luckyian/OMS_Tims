@@ -4,35 +4,35 @@ import Local from '../../../utils/localStorage'
 import API from '../../../utils/API'
 import { useAuth } from '../../../contexts/AuthContext'
 
-export default function DeleteMedModal(props) {
+export default function DeletechipModal(props) {
 
     const [modalError, setModalError] = useState()
-    const medNameRef = useRef()
+    const chipNameRef = useRef()
     const { currentUser } = useAuth()
 
-    let potentialMeds = Local.getMedsArr()
+    let potentialChip = Local.getChipsArr()
 
     const handleClose = () => {
         props.setShow(false)
     }
 
-    function handleDeleteMed() {
-        const payload = {id: currentUser.uid, med: medNameRef.current.value}
-        API.removeMed(payload)
+    function handleDeleteChip() {
+        const payload = {id: currentUser.uid, chip: chipNameRef.current.value}
+        API.removeChip(payload)
         .then(({data}) => {
-            Local.setMedsArr(data.meds)
+            Local.setChipsArr(data.chips)
             handleClose()
         })
         .catch(err => {
             console.log(err)
-            setModalError("unable to delete medication")
+            setModalError("unable to delete chip")
             API.saveTransaction({
-                apiName: 'removeMed',
+                apiName: 'removeChip',
                 payload: payload
             })
-            Local.setMedsArr((Local.getMedsArr()).filter(med => med.name !== payload.med))
+            Local.setChipsArr((Local.getChipsArr()).filter(chip => chip.name !== payload.chip))
             handleClose()
-            props.setMedError("No connection found.  Data will be stored when connection is reestablished.")
+            props.setChipError("No connection found.  Data will be stored when connection is reestablished.")
         })  
     }
 
@@ -46,15 +46,15 @@ export default function DeleteMedModal(props) {
         centered
         >
         <Modal.Header closeButton>
-            <Modal.Title>Add New Dose</Modal.Title>
+            <Modal.Title>Add New Order</Modal.Title>
         </Modal.Header>
         <Modal.Body>
         {modalError && <Alert variant="danger">{modalError}</Alert>}
             <Form>
                 <Form.Group>
-                    <Form.Label>Medication Name</Form.Label>
-                    <Form.Control as="select" ref={medNameRef}>
-                        {potentialMeds.map(medication => (<option>{medication.name}</option>))}
+                    <Form.Label>Chip Name</Form.Label>
+                    <Form.Control as="select" ref={chipNameRef}>
+                        {potentialChips.map(chip => (<option>{chip.name}</option>))}
                     </Form.Control>
                 </Form.Group>
             </Form>
@@ -63,7 +63,7 @@ export default function DeleteMedModal(props) {
             <Button variant="secondary" onClick={handleClose}>
                 Close
             </Button>
-            <Button variant="danger" onClick={handleDeleteMed}>Delete</Button>
+            <Button variant="danger" onClick={handleDeletechip}>Delete</Button>
         </Modal.Footer>
         </Modal>
 
