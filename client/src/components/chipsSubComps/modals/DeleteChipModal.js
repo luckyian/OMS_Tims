@@ -4,13 +4,13 @@ import Local from '../../../utils/localStorage'
 import API from '../../../utils/API'
 import { useAuth } from '../../../contexts/AuthContext'
 
-export default function DeletechipModal(props) {
+export default function DeleteChipModal(props) {
 
     const [modalError, setModalError] = useState()
     const chipNameRef = useRef()
     const { currentUser } = useAuth()
 
-    let potentialChip = Local.getChipsArr()
+    let potentialChips = Local.getChipsArr()
 
     const handleClose = () => {
         props.setShow(false)

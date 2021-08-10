@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Container, Accordion, Row, Col, Card, Button, Alert } from 'react-bootstrap'
 import NavbarComponent from './SharedComponents/Navbar'
-import chipsModal from './chipsSubComps/modals/AddChipModal'
+import ChipsModal from './chipsSubComps/modals/AddChipModal'
 import AddOrder from './chipsSubComps/modals/AddOrderModal'
-import DeletechipModal from './chipsSubComps/modals/DeleteChipModal'
+import DeleteChipModal from './chipsSubComps/modals/DeleteChipModal'
 import Local from '../utils/localStorage'
 // import FooterComp from './SharedComponents/Footer'
 import LineChart from './chipsSubComps/testchipChart'
@@ -15,7 +15,7 @@ import LineChart from './chipsSubComps/testchipChart'
 export default function chip() {
 
     // const { currentUser } = useAuth()
-    const [showChipModal, setShowChipModal] = useState(false);
+    const [showChipsModal, setShowChipsModal] = useState(false);
     const [showDoseModal, setShowDoseModal] = useState(false);
     const [showDeleteModal, setShowDeleteModal] = useState(false);
     const [error, setError] = useState(false)
@@ -23,7 +23,7 @@ export default function chip() {
 
     const chipsArr = Local.getChipsArr()
 
-    const handleShowChipModal = () => setShowChipModal(true);
+    const handleShowChipsModal = () => setShowChipsModal(true);
     const handleShowDoseModal = () => {
         if (chipsArr.length > 0) {
             setError('')
@@ -103,7 +103,7 @@ export default function chip() {
                                 </Button> */}
             </Container>
             {/* <FooterComp /> */}
-            <chipsModal show={showChipModal} setShow={setShowChipModal} setChipError={setError} />
+            <ChipsModal show={showChipsModal} setShow={setShowChipsModal} setChipError={setError} />
             <AddOrder show={showDoseModal} setShow={setShowDoseModal} setChipError={setError} />
             <DeleteChipModal show={showDeleteModal} setShow={setShowDeleteModal} setChipError={setError} />
 
