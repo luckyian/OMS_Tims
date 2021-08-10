@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Container, Accordion, Row, Col, Card, Button, Alert } from 'react-bootstrap'
 import NavbarComponent from './SharedComponents/Navbar'
-import chipsModal from './chipsSubComps/modals/AddChipsModal'
-import AddChipDose from './chipsSubComps/modals/AddChipDoseModal'
+import chipsModal from './chipsSubComps/modals/AddChipModal'
+import AddOrder from './chipsSubComps/modals/AddOrderModal'
 import DeletechipModal from './chipsSubComps/modals/DeleteChipModal'
 import Local from '../utils/localStorage'
 // import FooterComp from './SharedComponents/Footer'
@@ -104,7 +104,7 @@ export default function chip() {
             </Container>
             {/* <FooterComp /> */}
             <chipsModal show={showChipModal} setShow={setShowChipModal} setChipError={setError} />
-            <AddChipDose show={showDoseModal} setShow={setShowDoseModal} setChipError={setError} />
+            <AddOrder show={showDoseModal} setShow={setShowDoseModal} setChipError={setError} />
             <DeleteChipModal show={showDeleteModal} setShow={setShowDeleteModal} setChipError={setError} />
 
         </div>
