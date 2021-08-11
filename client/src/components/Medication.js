@@ -7,12 +7,12 @@ import AddOrder from './chipsSubComps/modals/AddOrderModal'
 import DeleteChipModal from './chipsSubComps/modals/DeleteChipModal'
 import Local from '../utils/localStorage'
 // import FooterComp from './SharedComponents/Footer'
-import LineChart from './chipsSubComps/testchipChart'
+// import LineChart from './chipsSubComps/testchipChart'
 
 
 
 
-export default function chip() {
+export default function Chip() {
 
     // const { currentUser } = useAuth()
     const [showChipsModal, setShowChipsModal] = useState(false);

@@ -63,7 +63,7 @@ export default function DeleteChipModal(props) {
             <Button variant="secondary" onClick={handleClose}>
                 Close
             </Button>
-            <Button variant="danger" onClick={handleDeletechip}>Delete</Button>
+            <Button variant="danger" onClick={handleDeleteChip}>Delete</Button>
         </Modal.Footer>
         </Modal>
 
