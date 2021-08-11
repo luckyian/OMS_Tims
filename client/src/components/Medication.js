@@ -43,7 +43,7 @@ export default function Chip() {
     }
 
     window.addEventListener('online', () => {
-        if(error === "No connection found.  Data will be stored when connection is reestablished.") {
+        if (error === "No connection found.  Data will be stored when connection is reestablished.") {
             setError('')
             setReconnect("Connection Reestablished")
         }
@@ -57,50 +57,10 @@ export default function Chip() {
                 <br />
 
                 <Container>
-            
-            </Container>
-
-                {/* <Accordion className="acordian" defaultActiveKey="0">
-                    <Card className="acordian">
-                        <Card.Header className="acordian">
-                            <Accordion.Toggle className="acordianbtn" as={Button} variant="link" eventKey="0">
-                                chipication options
-                        </Accordion.Toggle>
-                        </Card.Header>
-                        <Accordion.Collapse eventKey="0">
-                            <Row className="chiprow">
-                                <Col className='col-md-4'>
-                                    <a className='btn chipbtn btn-block' onClick={handleShowDoseModal}>
-                                        Log chipication Dose
-                                    </a>
-                                </Col>
-                                <Col className='col-md-4'>
-                                    <a className='btn chipbtn btn-block' onClick={handleShowchipModal}>
-                                        Add new chipication
-                                    </a>
-                                </Col>
-                                <Col className='col-md-4'>
-                                    <a className='btn chipbtn btn-block' onClick={handleShowDeleteModal}>
-                                        Delete chipication
-                                    </a>
-                                </Col>
-                            </Row>
-                        </Accordion.Collapse>
-                    </Card>
-                </Accordion> */}
-                {/* <LineChart /> */}
-                {/* <Button style={styles.button} onClick={handleShowDoseModal}>
-                                    Log chipication Dose
-                                </Button> */}
+                
+                </Container>
 
 
-                {/* <Button style={styles.button} onClick={handleShowchipModal}>
-                                        Add new chipication
-                                    </Button> */}
-
-                {/* <Button style={styles.button} onClick={handleShowDeleteModal}>
-                                    Delete chipication
-                                </Button> */}
             </Container>
             {/* <FooterComp /> */}
             <ChipsModal show={showChipsModal} setShow={setShowChipsModal} setChipError={setError} />

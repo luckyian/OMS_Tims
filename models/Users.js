@@ -3,25 +3,32 @@ const Schema = mongoose.Schema;
 
 const UsersSchema = new Schema({
     _id: String,
-    tests: [{
-        date: {
-            type: Date,
-            default: Date.now
-        },
-        glucose: Number,
-        comment: String
-    }],
-    meds: [{
+    store: [{
+        _id: String,
+        chips: [{
+            name: String,
+            sku: Number
+        }],
         name: String,
-        type: {
-            type: String,
-        },
-        doses: [{
-            date: {
-                type: Date,
-                default: Date.now
-            },
-            amount: String
+    }],
+    chips: [{
+        _id: String,
+        name: String,
+        type: Number
+
+    }],
+    order: [{
+        _id: String,
+        name: String,
+        cases: [{
+            store: [{
+                chips: [{
+                    name: String,
+                    sku: Number,
+                    case: Number
+                }],
+                name: String,
+            }]
         }]
     }]
 })
