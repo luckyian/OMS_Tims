@@ -6,23 +6,23 @@ import { Form } from "react-bootstrap"
 
 export default function StoreSelect() {
 
-   
+
     // const { currentUser } = useAuth()
     const chipArr = Local.getChipsArr()
     const chipNameRef = useRef()
     console.log(chipArr)
- 
+
 
 
     function handleAddChart() {
 
-        
+
         const targetChip = chipArr.filter(chip => chip.name === chipNameRef.current.value)
         console.log(targetChip[0].doses)
-      
-     
+
+
     }
-  
+
     const data = {
         // dates = lables
         labels: dates,
@@ -37,9 +37,9 @@ export default function StoreSelect() {
             },
         ],
     }
-    
-    
-   
+
+
+
     return (
         <div>
             <Form>
