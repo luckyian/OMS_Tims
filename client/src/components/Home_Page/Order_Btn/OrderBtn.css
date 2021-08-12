@@ -1,0 +1,9 @@
+#order{
+    background-color: red;
+    width: 80%;
+    height: 5rem;
+    color: whitesmoke;
+    margin: 20px auto;
+    text-align: center;
+    text-shadow: 2px 2px black;
+}

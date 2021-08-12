@@ -6,7 +6,7 @@ const request = window.indexedDB.open("pendingTransactions", 1)
 request.onerror = (e) => console.log("offline transactions unavailable")
 
 request.onsuccess = (e) => {
-  console.log("opened db successfuly")
+  console.log("opened db successfully")
   db = request.result
   checkPendingTransactions()
 

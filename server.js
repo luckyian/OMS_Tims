@@ -23,7 +23,7 @@ app.get("/service-worker.js", (req, res) => {
 // Send every other request to the React app
 // Define any API routes before this runs
 app.get("*", (req, res) => {
-  console.log("the wrong path triggered")
+  
   res.sendFile(path.join(__dirname, "./client/public/index.html"));
 });
 

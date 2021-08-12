@@ -5,17 +5,17 @@ import { AuthProvider } from '../contexts/AuthContext'
 import ScreenSize from '../contexts/ScreenSizeContext'
 
 import Dashboard from './Dashboard'
+import HomePage from './Home_Page/HomePage'
 import BloodSugarPage from './BloodSugarPage'
 import BloodSugGraph from './bloodSugSubComps/BloodSugGraph'
-import Medication from './Medication'
-import Questions from './Questions'
+import Chip from './ChipMasterList'
+import Store from './StoreMasterList'
 import Signup from './authComponents/Signup'
 import Login from './authComponents/Login'
 import ResetPassword from './authComponents/ResetPassword'
 import UpdateProfile from './authComponents/UpdateProfile'
-import MedsChart from "./chipsSubComps/MedsChart"
-import Footer from "./SharedComponents/Footer"
-import Contact from "../components/Contact"
+
+
 
 
 function App() {
@@ -29,16 +29,17 @@ function App() {
                   <Route exact path='/signup' component={Signup} />
                   <Route exact path='/update-profile' component={UpdateProfile} />
                   <Route exact path='/reset-password' component={ResetPassword} />
-                  <Route exact path='/contact' component={Contact} />
-                  <PrivateRoute exact path='/' component={Dashboard} />
+                  {/* <Route exact path='/contact' component={Contact} /> */}
+                  <PrivateRoute exact path='/' component={HomePage} />
                   <PrivateRoute exact path='/bloodsugar' component={BloodSugarPage} />
                   <PrivateRoute exact path='/bloodsugar/graph' component={BloodSugGraph} />
-                  <PrivateRoute exact path='/medication' component={Medication} />
-                  <PrivateRoute exact path='/questions' component={Questions} />
-                  <PrivateRoute exact path='/medschart' component={MedsChart} />
+                  <PrivateRoute exact path='/chip' component={Chip} />
+                  <PrivateRoute exact path='/store' component={Store} />
+                 
+                  
               </Switch>
           </Router>
-            <Footer/>
+            {/* <Footer/> */}
         </ScreenSize>
       </AuthProvider>
   );
