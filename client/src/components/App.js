@@ -13,7 +13,7 @@ import Signup from './authComponents/Signup'
 import Login from './authComponents/Login'
 import ResetPassword from './authComponents/ResetPassword'
 import UpdateProfile from './authComponents/UpdateProfile'
-import MedsChart from "./medsSubComps/MedsChart"
+import MedsChart from "./chipsSubComps/MedsChart"
 import Footer from "./SharedComponents/Footer"
 import Contact from "../components/Contact"
 
