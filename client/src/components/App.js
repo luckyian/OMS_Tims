@@ -4,7 +4,6 @@ import PrivateRoute from '../wrappers/PrivateRoute'
 import { AuthProvider } from '../contexts/AuthContext'
 import ScreenSize from '../contexts/ScreenSizeContext'
 
-import Dashboard from './Dashboard'
 import HomePage from './Home_Page/HomePage'
 import BloodSugarPage from './BloodSugarPage'
 import BloodSugGraph from './bloodSugSubComps/BloodSugGraph'
