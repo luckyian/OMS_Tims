@@ -6,6 +6,7 @@ import Local from "../../utils/localStorage"
 
 import PickListBtn from './Pick_List_Btn/PickListBtn.js'
 import OrderBtn from './Order_Btn/OrderBtn.js'
+import { Link } from 'react-router-dom'
 
 export default function HomePage() {
 
