@@ -11,7 +11,7 @@ export default function PickListCalendar({ setDisplayedOrders }) {
         allOrdersArr = Local.getOrderArr()
     }, [])
 
-    handleOnChange(value, event){
+    function handleOnChange(value, event){
         setDisplayedOrders(allOrdersArr.filter(order => order.date === value))
     }
 
