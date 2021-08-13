@@ -11,7 +11,7 @@ export default function AddMedDose(props) {
     const doseRef = useRef()
     const { currentUser } = useAuth()
 
-    const potentialMeds = Local.getMedsArr()
+    const potentialMeds = Local.getOrderArr()
     console.log(potentialMeds)
 
     const handleClose = () => {

@@ -12,6 +12,7 @@
     "firebase": "^8.7.1",
     "react": "^16.14.0",
     "react-bootstrap": "^1.6.1",
+    "react-calendar": "^3.4.0",
     "react-dom": "^16.14.0",
     "react-firebaseui": "^4.2.0",
     "react-router-dom": "^5.2.0",

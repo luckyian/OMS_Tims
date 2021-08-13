@@ -4,9 +4,9 @@ import PrivateRoute from '../wrappers/PrivateRoute'
 import { AuthProvider } from '../contexts/AuthContext'
 import ScreenSize from '../contexts/ScreenSizeContext'
 
-import Dashboard from './Dashboard'
+import HomePage from './Home_Page/HomePage.js'
+import PickListPage from './Pick_List_Page/PickListPage.js'
 import BloodSugarPage from './BloodSugarPage'
-import BloodSugGraph from './bloodSugSubComps/BloodSugGraph'
 import Chip from './ChipMasterList'
 import Store from './StoreMasterList'
 import Signup from './authComponents/Signup'
@@ -28,17 +28,15 @@ function App() {
                   <Route exact path='/signup' component={Signup} />
                   <Route exact path='/update-profile' component={UpdateProfile} />
                   <Route exact path='/reset-password' component={ResetPassword} />
-                  <Route exact path='/contact' component={Contact} />
-                  <PrivateRoute exact path='/' component={Dashboard} />
+                  <PrivateRoute exact path='/' component={HomePage} />
+                  <PrivateRoute exact path='/picklist' component={PickListPage} />
                   <PrivateRoute exact path='/bloodsugar' component={BloodSugarPage} />
-                  <PrivateRoute exact path='/bloodsugar/graph' component={BloodSugGraph} />
                   <PrivateRoute exact path='/chip' component={Chip} />
                   <PrivateRoute exact path='/store' component={Store} />
                  
                   
               </Switch>
           </Router>
-            <Footer/>
         </ScreenSize>
       </AuthProvider>
   );

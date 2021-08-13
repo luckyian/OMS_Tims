@@ -1,23 +1,32 @@
 import axios from "axios";
 
+// this page handles making api calls from the front end and saving failed calls to be made at a later time
+
 let db
+
+// this opens indexedDB for the DB named pendingTransactions
 const request = window.indexedDB.open("pendingTransactions", 1)
 
+// if there is an error when opening "pendingTransactions DB then the console.log will happen"
 request.onerror = (e) => console.log("offline transactions unavailable")
 
+// if the DB is opened successfully then assign that open connection to our global variable
+// then check if there is any transactions that are still pending
 request.onsuccess = (e) => {
-  console.log("opened db successfuly")
+  console.log("opened db successfully")
   db = request.result
   checkPendingTransactions()
 
 }
 
+//this should never trigger but it is here if the DB needs to be changed
 request.onupgradeneeded = (e) => {
   db = request.result
 
   db.createObjectStore("pendingTransactions", { autoIncrement: true})
 }
 
+// and object containing functions to be exported through out the app
 const API = {
   
   saveTransaction: function(trans) {
@@ -82,11 +91,16 @@ export default API
 function checkPendingTransactions() {
   console.log("checking for unsent transactions")
 
+  // request to make a transaction from the DB
+  // then create a DB from the DB
   const transaction = db.transaction(["pendingTransactions"], "readwrite")
   const objStore = transaction.objectStore("pendingTransactions")
 
+  // get everything from the DB
   const pendingTransactionsArr = objStore.getAll()
 
+  // if we succeed in getting data then check if there is a result
+  // if result then execute the transactions and empty the DB
   pendingTransactionsArr.onsuccess = () => {
     console.log(pendingTransactionsArr.result)
     if(pendingTransactionsArr.result) {
@@ -101,6 +115,7 @@ function checkPendingTransactions() {
 
 }
 
+// if the device is reconnected to the internet then check if there are any pending transactions
 window.addEventListener('online', checkPendingTransactions)
 
 

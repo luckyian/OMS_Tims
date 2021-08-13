@@ -1,18 +1,26 @@
 export default {
 
-    setTestsArr: function(arr) {
-        localStorage.setItem("testsArr", JSON.stringify(arr))
+    setStores: function(storeArr) {
+        localStorage.setItem("storeArr", JSON.stringify(storeArr))
     },
 
-    getTestsArr: function() {
-        return JSON.parse(localStorage.getItem("testsArr"))
+    getStoresArr: function() {
+        return JSON.parse(localStorage.getItem("storeArr"))
     },
 
-    setMedsArr: function(arr) {
-        localStorage.setItem("medsArr", JSON.stringify(arr))
+    setChipArr: function(chipArr) {
+        localStorage.setItem("chipArr", JSON.stringify(chipArr))
     },
     
-    getMedsArr: function(arr) {
-        return JSON.parse(localStorage.getItem("medsArr"))
+    getChipArr: function() {
+        return JSON.parse(localStorage.getItem("chipArr"))
+    },
+
+    setOrderArr: function(orderArr) {
+        localStorage.setItem("orderArr", JSON.stringify(orderArr))
+    },
+
+    getOrderArr: function() {
+        return JSON.parse(localStorage.getItem("orderArr"))
     }
 }
