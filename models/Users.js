@@ -20,6 +20,10 @@ const UsersSchema = new Schema({
     order: [{
         _id: String,
         name: String,
+        date: {
+            type: Date,
+            default: Date.now
+        },
         cases: [{
             store: [{
                 chips: [{
