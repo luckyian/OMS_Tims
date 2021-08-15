@@ -57,7 +57,7 @@ export default function HomePage() {
                         <PickListBtn style={{ width: '100%' }} title="Pick List"   />
                         <OrderBtn style={{ width: '100%' }} title="Order" />
                         <ChipsBtn style={{ width: '100%' }} title="Chips" />
-                        {/* <StoreBtn style={{ width: '100%' }} title="Store" /> */}
+                        <StoreBtn style={{ width: '100%' }} title="Store" />
                        
                     </Col>
                 </Row>

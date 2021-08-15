@@ -7,7 +7,7 @@ export default function ChipsBtn() {
     const history = useHistory()
 
     return (
-        <button id="chip-list"  onClick={() => history.push("/chips")}>
+        <button id="chip-list"  onClick={() => history.push("/chip")}>
             Chip Master List
         </button>
     )
