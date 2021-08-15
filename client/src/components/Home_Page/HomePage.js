@@ -44,20 +44,22 @@ export default function HomePage() {
     }, [currentUser])
 
     return (
+        <div>
+        <NavbarComponent />
         <div id="home-page">
-            <NavbarComponent />
+            
             <Container>
                 <Row style={{ textAlign: "center" }}>
                     <Col style={{ paddingTop: '50px' }}>
 
-                        <PickListBtn style={{ width: '100%' }} title="Last Blood Sugar"   />
-                        <OrderBtn style={{ width: '100%' }} title="Average Blood Sugar" />
+                        <PickListBtn style={{ width: '100%' }} title="Pick List"   />
+                        <OrderBtn style={{ width: '100%' }} title="Order" />
                        
                     </Col>
                 </Row>
             </Container>
             
-        
+            </div>
         </div>
     )
 }
