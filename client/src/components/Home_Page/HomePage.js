@@ -1,8 +1,10 @@
-import React, { useEffect }from 'react'
+import React, { useEffect, Modal, Alert }from 'react'
 import { useAuth } from '../../contexts/AuthContext'
 import './HomePage.css'
 import API from '../../utils/API'
 import Local from "../../utils/localStorage"
+import NavbarComponent from "../SharedComponents/Navbar.js"
+import { Container, Form, Row, Col, Button } from 'react-bootstrap'
 
 import PickListBtn from './Pick_List_Btn/PickListBtn.js'
 import OrderBtn from './Order_Btn/OrderBtn.js'
@@ -43,8 +45,19 @@ export default function HomePage() {
 
     return (
         <div id="home-page">
-            <PickListBtn />
-            <OrderBtn />
+            <NavbarComponent />
+            <Container>
+                <Row style={{ textAlign: "center" }}>
+                    <Col style={{ paddingTop: '50px' }}>
+
+                        <PickListBtn style={{ width: '100%' }} title="Last Blood Sugar"   />
+                        <OrderBtn style={{ width: '100%' }} title="Average Blood Sugar" />
+                       
+                    </Col>
+                </Row>
+            </Container>
+            
+        
         </div>
     )
 }

@@ -7,7 +7,7 @@ export default function PickListBtn() {
     const history = useHistory()
 
     return (
-        <button id="pick-list" onClick={() => history.push("/picklist")}>
+        <button id="pick-list"  onClick={() => history.push("/picklist")}>
             Pick List
         </button>
     )
