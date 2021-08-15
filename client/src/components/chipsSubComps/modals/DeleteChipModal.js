@@ -10,7 +10,7 @@ export default function DeleteChipModal(props) {
     const chipNameRef = useRef()
     const { currentUser } = useAuth()
 
-    let potentialChips = Local.getChipsArr()
+    let potentialChips = Local.getChipArr()
 
     const handleClose = () => {
         props.setShow(false)
