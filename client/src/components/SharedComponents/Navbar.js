@@ -39,7 +39,7 @@ export default function NavbarComponent() {
                         <NavDropdown.Item href="update-profile">Update Profile</NavDropdown.Item>
                         <NavDropdown.Divider />
                         <NavDropdown.Item href="contact">Create Order</NavDropdown.Item>
-                        <NavDropdown.Item href="questions">View Picklist</NavDropdown.Item>
+                        <NavDropdown.Item href="picklist">View Picklist</NavDropdown.Item>
                     </NavDropdown>
                     
                 
