@@ -6,6 +6,8 @@ import Local from "../../utils/localStorage"
 import NavbarComponent from "../SharedComponents/Navbar.js"
 import { Container, Form, Row, Col, Button } from 'react-bootstrap'
 
+import ChipsBtn from './Chips_Btn/ChipsBtn.js'
+import StoreBtn from './Store_Btn/StoreBtn.js'
 import PickListBtn from './Pick_List_Btn/PickListBtn.js'
 import OrderBtn from './Order_Btn/OrderBtn.js'
 import { Link } from 'react-router-dom'
@@ -50,10 +52,12 @@ export default function HomePage() {
             
             <Container>
                 <Row style={{ textAlign: "center" }}>
-                    <Col style={{ paddingTop: '50px' }}>
+                    <Col >
 
                         <PickListBtn style={{ width: '100%' }} title="Pick List"   />
                         <OrderBtn style={{ width: '100%' }} title="Order" />
+                        <ChipsBtn style={{ width: '100%' }} title="Chips" />
+                        {/* <StoreBtn style={{ width: '100%' }} title="Store" /> */}
                        
                     </Col>
                 </Row>
