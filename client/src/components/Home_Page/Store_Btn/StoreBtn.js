@@ -7,7 +7,7 @@ export default function StoreBtn() {
     const history = useHistory()
 
     return (
-        <button id="store-list"  onClick={() => history.push("/stores")}>
+        <button id="store-list"  onClick={() => history.push("/store")}>
             Stores
         </button>
     )
