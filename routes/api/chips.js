@@ -5,7 +5,7 @@ const chipsController = require('../../controller/chipsController')
 router.route("/")
     .delete(chipsController.removeChip)
     .post(chipsController.addNewChip)
-router.route("/order")
+router.route("/chip")
     .post(chipsController.orderCase)
 
 module.exports = router;
