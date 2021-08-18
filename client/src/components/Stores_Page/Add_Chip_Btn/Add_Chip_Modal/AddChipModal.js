@@ -1,8 +1,8 @@
 import React, { useRef, useState } from 'react'
 import { Button, Form, Modal, Alert } from 'react-bootstrap'
-import Local from '../../../utils/localStorage'
-import API from '../../../utils/API'
-import { useAuth } from '../../../contexts/AuthContext'
+import Local from '../../../../utils/localStorage'
+import API from '../../../../utils/API'
+import { useAuth } from '../../../../contexts/AuthContext'
 // chipNameRef = medNameRef
 // potentialChips = potentialMeds
 
@@ -10,11 +10,25 @@ export default function ChipsModal(props) {
 
     const [needText, setNeedText] = useState()
     const [modalError, setModalError] = useState()
+    const [chipsToAdd, setChipsToAdd] = useState(false)
     const chipNameRef = useRef()
-    const typeRef = useRef()
+    const skuRef = useRef()
+
+    // this was used to enter in unlisted meds
     const otherNameRef = useRef()
+
     const { currentUser } = useAuth()
     
+    
+    const potentialChipsWithSku = [
+        {
+            name: "2oz Original",
+            sku: "12423hjfkjhkjs",
+            price: 5.99
+        }
+    ]
+    // also we could do a DB for this or do just a json object in its own file
+    // That would also make it easier for them to add chips to the array when they come out
 
     const potentialChips = [
         "2oz Original",
@@ -189,6 +203,7 @@ export default function ChipsModal(props) {
         props.setShow(false)
     }
 
+    // lets the user know that they need to put in a valid chip
     function needTextBox() {
         if(chipNameRef.current.value === "Other") {
             setNeedText(true)
@@ -200,23 +215,33 @@ export default function ChipsModal(props) {
 
     function handleAddChip() {
 
+        // this was used to check if a non named item was entered and no blank names were added
         if(needText && otherNameRef.current.value === "") {
             return setModalError("Chip must have a name")
         }
 
+        // creates an object that stores the new data
+        // cases value needs to be incorperated into the form
         const payload = {
             id: currentUser.uid,
             chip: {
                 name: chipNameRef.current.value,
-                type: typeRef.current.value,
+                sku: skuRef.current.value,
                 cases:[]
             }
         }
+
+        //adding the new data to the DB and updating local storage
         API.addNewChip(payload )
+            // on a success add the data to local storage and close the modal
             .then(({data}) => {
                 Local.setChipsArr(data.chips)
                 handleClose()
             })
+            // if an error occurs when adding the data to the DB:
+            // log the error
+            // save the transaction to local storage to be completed once connection is re established
+            // push the new data to local storage to be used until it can be presisted in the DB
             .catch(err => {
                 console.log(err)
                 API.saveTransaction({
@@ -241,7 +266,7 @@ export default function ChipsModal(props) {
         centered
         >
         <Modal.Header closeButton>
-            <Modal.Title>Add New Chip</Modal.Title>
+            <Modal.Title>Add New Chips</Modal.Title>
         </Modal.Header>
         <Modal.Body>
         {modalError && <Alert variant="danger">{modalError}</Alert>}
@@ -249,27 +274,45 @@ export default function ChipsModal(props) {
                 <Form.Group>
                     <Form.Label>Chip Name</Form.Label>
                     <Form.Control as="select" ref={chipNameRef} onChange={needTextBox}>
-                        {potentialChips.map(chip => (<option>{chip}</option>))}
+                        {potentialChips.map(chip => (<option key={chip}>{chip}</option>))}
                         <option>Other</option>
                     </Form.Control>
                 </Form.Group>
+
+                {/* this shows up when adding in a new item */}
                 {needText && (
                 <Form.Group>
                     <Form.Label>Enter In Other Chip Name</Form.Label>
                     <Form.Control type='text' ref={otherNameRef} placeholder="Chip Name"/>
                 </Form.Group>
                 )}
+
                 <Form.Group>
                     <Form.Label>Sku</Form.Label>
-                    <Form.Control type='text' ref={typeRef} placeholder="Chip Sku"/>
+                    <Form.Control type='text' ref={skuRef} placeholder="Chip Sku"/>
                 </Form.Group>
             </Form>
+            {/* if there are multiple chips being added then display those chips here */}
+            {chipsToAdd && (
+                <div>
+                    <h4>Chips List</h4>
+                    <div>
+                        {chipsToAdd.map((chip) => 
+                            <li key={chip.name}>
+                                {chip.name}
+                            </li>
+                        )}
+                    </div>
+                </div>
+            )}
         </Modal.Body>
         <Modal.Footer>
             <Button variant="secondary" onClick={handleClose}>
                 Close
             </Button>
-            <Button variant="primary" onClick={handleAddChip}>Enter</Button>
+            {/* Something to add multiple chips in one modal later */}
+            {/* <Button variant="primary" onClick={handleMultipleChipAdd}>Add Another</Button> */}
+            <Button variant="primary" onClick={handleAddChip}>Add</Button>
         </Modal.Footer>
         </Modal>
 
