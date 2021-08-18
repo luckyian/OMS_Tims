@@ -1,8 +1,8 @@
 import React, { useRef, useState } from 'react'
 import { Button, Form, Modal, Alert } from 'react-bootstrap'
-import Local from '../../../../utils/localStorage'
-import API from '../../../../utils/API'
-import { useAuth } from '../../../../contexts/AuthContext'
+import Local from '../../../utils/localStorage'
+import API from '../../../utils/API'
+import { useAuth } from '../../../contexts/AuthContext'
 // chipNameRef = medNameRef
 // potentialChips = potentialMeds
 
@@ -19,16 +19,6 @@ export default function ChipsModal(props) {
 
     const { currentUser } = useAuth()
     
-    
-    const potentialChipsWithSku = [
-        {
-            name: "2oz Original",
-            sku: "12423hjfkjhkjs",
-            price: 5.99
-        }
-    ]
-    // also we could do a DB for this or do just a json object in its own file
-    // That would also make it easier for them to add chips to the array when they come out
 
     const potentialChips = [
         "2oz Original",
