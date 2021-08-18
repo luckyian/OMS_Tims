@@ -10,14 +10,17 @@ export default function DeleteChipModal(props) {
     const chipNameRef = useRef()
     const { currentUser } = useAuth()
 
-    let potentialChips = Local.getChipArr()
-
     const handleClose = () => {
         props.setShow(false)
     }
 
     function handleDeleteChip() {
-        const payload = {id: currentUser.uid, chip: chipNameRef.current.value}
+
+        const payload = {
+            id: currentUser.uid, 
+            chip: chipNameRef.current.value
+        }
+
         API.removeChip(payload)
         .then(({data}) => {
             Local.setChipsArr(data.chips)
@@ -50,14 +53,16 @@ export default function DeleteChipModal(props) {
         </Modal.Header>
         <Modal.Body>
         {modalError && <Alert variant="danger">{modalError}</Alert>}
+        {props.selectedStore.chips && 
             <Form>
                 <Form.Group>
                     <Form.Label>Chip Name</Form.Label>
                     <Form.Control as="select" ref={chipNameRef}>
-                        {potentialChips.map(chip => (<option>{chip.name}</option>))}
+                        {props.selectedStore.chips.map(chip => (<option>{chip.name}</option>))}
                     </Form.Control>
                 </Form.Group>
             </Form>
+        }
         </Modal.Body>
         <Modal.Footer>
             <Button variant="secondary" onClick={handleClose}>
