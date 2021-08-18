@@ -32,7 +32,7 @@ export default function PickListCalendar({ setDisplayedOrders }) {
         }
     }
 
-    // whenever the chelendar is clicked this function tries to find orders on that date
+    // whenever the chalender is clicked this function tries to find orders on that date
     function handleOnChange(value, event){
         console.log(value, allOrdersArr)
 

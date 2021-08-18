@@ -54,9 +54,9 @@ const API = {
   },
 
   addNewChip: function(payload) {
-    return axios.post("/api/meds/", {
+    return axios.post("/api/chip/", {
       id: payload.id,
-      med: payload.med
+      chip: payload.chip
     })
   },
 
@@ -68,19 +68,19 @@ const API = {
     })
   },
 
-  removeMed: function(payload) {
-    return axios.delete("api/meds/", {
+  removeChip: function(payload) {
+    return axios.delete("api/chip/", {
       data: {
         id: payload.id,
-        med: payload.med
+        chip: payload.chip
 
       }
     })
   },
   
   // Saves a blood sugar to the database
-  saveBloodSugar: function(payload) {
-    return axios.post("/api/bloodsugar/", payload);
+  saveOrder: function(payload) {
+    return axios.post("/api/order/", payload);
   }
 };
 

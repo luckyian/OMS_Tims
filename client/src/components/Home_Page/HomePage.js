@@ -1,9 +1,13 @@
-import React, { useEffect }from 'react'
+import React, { useEffect, Modal, Alert }from 'react'
 import { useAuth } from '../../contexts/AuthContext'
 import './HomePage.css'
 import API from '../../utils/API'
 import Local from "../../utils/localStorage"
+import NavbarComponent from "../SharedComponents/Navbar.js"
+import { Container, Form, Row, Col, Button } from 'react-bootstrap'
 
+import ChipsBtn from './Chips_Btn/ChipsBtn.js'
+import StoreBtn from './Store_Btn/StoreBtn.js'
 import PickListBtn from './Pick_List_Btn/PickListBtn.js'
 import OrderBtn from './Order_Btn/OrderBtn.js'
 import { Link } from 'react-router-dom'
@@ -42,9 +46,24 @@ export default function HomePage() {
     }, [currentUser])
 
     return (
+        <div>
+        <NavbarComponent />
         <div id="home-page">
-            <PickListBtn />
-            <OrderBtn />
+            
+            <Container>
+                <Row style={{ textAlign: "center" }}>
+                    <Col >
+
+                        <PickListBtn style={{ width: '100%' }} title="Pick List"   />
+                        <OrderBtn style={{ width: '100%' }} title="Order" />
+                        <ChipsBtn style={{ width: '100%' }} title="Chips" />
+                        <StoreBtn style={{ width: '100%' }} title="Store" />
+                       
+                    </Col>
+                </Row>
+            </Container>
+            
+            </div>
         </div>
     )
 }

@@ -1,3 +1,4 @@
+const db = require("../models/Users");
 const Stores = require("../models/Stores");
 // meds/med = chip/chips
 module.exports = {

@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, Navbar, Nav, NavDropdown, Form } from 'react-bootstrap'
 import { useAuth } from '../../contexts/AuthContext'
 import "./Navbar.css"
-import Logo from '../../Images/logo.png'
+import Logo from '../../Images/timsLogo.png'
 import { useHistory } from 'react-router-dom'
 
 export default function NavbarComponent() {
@@ -23,23 +23,23 @@ export default function NavbarComponent() {
                     height="40"
                     className="d-inline-block"
                 />{' '}
-                      The Glucose Guardian
+                      Jeff and Ashley's Order System
                  </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto navbar-links">
                     <Nav.Link classname="navbar-links" href="/">Home</Nav.Link>
                     <Nav.Link href="">    </Nav.Link>
-                    <Nav.Link href="bloodsugar">Track Blood Sugar</Nav.Link>
+                    <Nav.Link href="bloodsugar">Add Chips</Nav.Link>
                     <Nav.Link href="">    </Nav.Link>
-                    <Nav.Link href="medication">Manage My Medications</Nav.Link>
+                    <Nav.Link href="medication">Add Stores</Nav.Link>
                     <Nav.Link href="">    </Nav.Link>
                     <NavDropdown title="More" id="basic-nav-dropdown">
                         
                         <NavDropdown.Item href="update-profile">Update Profile</NavDropdown.Item>
                         <NavDropdown.Divider />
-                        <NavDropdown.Item href="contact">Contact Us</NavDropdown.Item>
-                        <NavDropdown.Item href="questions">Questions</NavDropdown.Item>
+                        <NavDropdown.Item href="contact">Create Order</NavDropdown.Item>
+                        <NavDropdown.Item href="picklist">View Picklist</NavDropdown.Item>
                     </NavDropdown>
                     
                 
