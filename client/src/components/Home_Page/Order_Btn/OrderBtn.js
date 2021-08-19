@@ -8,7 +8,7 @@ export default function OrderBtn() {
     const history = useHistory()
 
     return (
-        <button id="order" onClick={() => history.push("/")}>
+        <button id="order" onClick={() => history.push("/order")}>
             Order
         </button>
     )
