@@ -1,0 +1,89 @@
+let storesDB = {[
+
+store1={
+    name= "s1",
+    id= 0
+},
+store2={
+    name= "s2",
+    id= 1
+},
+store3={
+    name= "s3",
+    id= 2
+},
+store4={
+    name= "s4",
+    id= 3
+},
+store5={
+    name= "s5",
+    id= 4
+},
+store6={
+    name= "s6",
+    id= 5
+},
+store7={
+    name= "s7",
+    id= 6
+},
+store8={
+    name= "s8",
+    id= 7
+},
+store9={
+    name= "s9",
+    id= 8
+},
+store10={
+    name= "s10",
+    id= 9
+},
+store11={
+    name= "s11",
+    id= 10
+},
+store12={
+    name= "s12",
+    id= 11
+},
+store13={
+    name= "s13",
+    id= 12
+},
+store14={
+    name= "s14",
+    id= 13
+},
+store15={
+    name= "s15",
+    id= 14
+},
+store16={
+    name= "s16",
+    id= 15
+},
+store17={
+    name= "s17",
+    id= 16
+},
+store18={
+    name= "s18",
+    id= 17
+},
+store19={
+    name= "s19",
+    id= 18
+},
+store20={
+    name= "s20",
+    id= 19
+}
+
+
+
+
+
+
+]}
