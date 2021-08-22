@@ -102,7 +102,7 @@ function checkPendingTransactions() {
   // if we succeed in getting data then check if there is a result
   // if result then execute the transactions and empty the DB
   pendingTransactionsArr.onsuccess = () => {
-    console.log(pendingTransactionsArr.result)
+    console.log("all pending transactions", pendingTransactionsArr.result)
     if(pendingTransactionsArr.result) {
       pendingTransactionsArr.result.forEach(trans => {
         console.log(trans) 

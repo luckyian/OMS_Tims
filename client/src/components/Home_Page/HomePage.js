@@ -10,7 +10,6 @@ import ChipsBtn from './Chips_Btn/ChipsBtn.js'
 import StoreBtn from './Store_Btn/StoreBtn.js'
 import PickListBtn from './Pick_List_Btn/PickListBtn.js'
 import OrderBtn from './Order_Btn/OrderBtn.js'
-import { Link } from 'react-router-dom'
 
 export default function HomePage() {
 

@@ -6,9 +6,10 @@ import ScreenSize from '../contexts/ScreenSizeContext'
 
 import HomePage from './Home_Page/HomePage.js'
 import PickListPage from './Pick_List_Page/PickListPage.js'
+import Order from './Order_Page/OrderPage.js'
 import BloodSugarPage from './BloodSugarPage'
 import Chip from './ChipMasterList.js'
-import Store from './StoreMasterList.js'
+import Store from './Stores_Page/StoreMasterList.js'
 import Signup from './authComponents/Signup'
 import Login from './authComponents/Login'
 import ResetPassword from './authComponents/ResetPassword'
@@ -30,6 +31,7 @@ function App() {
                   <Route exact path='/reset-password' component={ResetPassword} />
                   <PrivateRoute exact path='/' component={HomePage} />
                   <PrivateRoute exact path='/picklist' component={PickListPage} />
+                  <PrivateRoute exact path='/order' component={Order} />
                   <PrivateRoute exact path='/bloodsugar' component={BloodSugarPage} />
                   <PrivateRoute exact path='/chip' component={Chip} />
                   <PrivateRoute exact path='/store' component={Store} />

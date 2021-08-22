@@ -28,7 +28,7 @@ export default function NavbarComponent() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto navbar-links">
-                    <Nav.Link classname="navbar-links" href="/">Home</Nav.Link>
+                    <Nav.Link className="navbar-links" href="/">Home</Nav.Link>
                     <Nav.Link href="">    </Nav.Link>
                     <Nav.Link href="bloodsugar">Add Chips</Nav.Link>
                     <Nav.Link href="">    </Nav.Link>

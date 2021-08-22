@@ -2,14 +2,14 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Container, Accordion, Row, Col, Card, Button, Alert } from 'react-bootstrap'
 import NavbarComponent from './SharedComponents/Navbar'
-import ChipsModal from './chipsSubComps/modals/AddChipModal'
+import ChipsModal from './Stores_Page/Add_Chip_Modal/AddChipModal'
 import AddOrder from './chipsSubComps/modals/AddOrderModal'
-import DeleteChipModal from './chipsSubComps/modals/DeleteChipModal'
+import DeleteChipModal from './Stores_Page/Delete_Chip_Modal/DeleteChipModal'
 import Local from '../utils/localStorage'
 // import FooterComp from './SharedComponents/Footer'
 // import LineChart from './chipsSubComps/testchipChart'
 
-
+// import AddChipBtn from './'
 
 
 export default function Chip() {
@@ -64,8 +64,8 @@ export default function Chip() {
             </Container>
             {/* <FooterComp /> */}
             <ChipsModal show={showChipsModal} setShow={setShowChipsModal} setChipError={setError} />
-            <AddOrder show={showDoseModal} setShow={setShowDoseModal} setChipError={setError} />
-            <DeleteChipModal show={showDeleteModal} setShow={setShowDeleteModal} setChipError={setError} />
+            {/* <AddOrder show={showDoseModal} setShow={setShowDoseModal} setChipError={setError} /> */}
+            {/* <DeleteChipModal show={showDeleteModal} setShow={setShowDeleteModal} setChipError={setError} selectedStore={selectedStore} /> */}
 
         </div>
     )

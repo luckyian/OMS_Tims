@@ -21,6 +21,17 @@ export default {
     },
 
     getOrderArr: function() {
-        return JSON.parse(localStorage.getItem("orderArr"))
+        console.log("getting the array for storage")
+        try{
+            return JSON.parse(localStorage.getItem("orderArr"))
+        }catch(error){
+            console.log("unable to retrieve local storage")
+            console.log(error)
+            console.log(localStorage.getItem("orderArr"))
+            return [{
+                date: new Date("Sat Aug 28 2021 00:00:00 GMT-0700 (Pacific Daylight Time)")
+            }]
+        }
+        
     }
 }
