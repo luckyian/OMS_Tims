@@ -30,15 +30,15 @@ export default function NavbarComponent() {
                 <Nav className="mr-auto navbar-links">
                     <Nav.Link className="navbar-links" href="/">Home</Nav.Link>
                     <Nav.Link href="">    </Nav.Link>
-                    <Nav.Link href="bloodsugar">Add Chips</Nav.Link>
+                    <Nav.Link href="chip">Add Chips</Nav.Link>
                     <Nav.Link href="">    </Nav.Link>
-                    <Nav.Link href="medication">Add Stores</Nav.Link>
+                    <Nav.Link href="store">Add Stores</Nav.Link>
                     <Nav.Link href="">    </Nav.Link>
                     <NavDropdown title="More" id="basic-nav-dropdown">
                         
                         <NavDropdown.Item href="update-profile">Update Profile</NavDropdown.Item>
                         <NavDropdown.Divider />
-                        <NavDropdown.Item href="contact">Create Order</NavDropdown.Item>
+                        <NavDropdown.Item href="order">Create Order</NavDropdown.Item>
                         <NavDropdown.Item href="picklist">View Picklist</NavDropdown.Item>
                     </NavDropdown>
                     

@@ -32,7 +32,7 @@ function App() {
                   <PrivateRoute exact path='/' component={HomePage} />
                   <PrivateRoute exact path='/picklist' component={PickListPage} />
                   <PrivateRoute exact path='/order' component={Order} />
-                  <PrivateRoute exact path='/bloodsugar' component={BloodSugarPage} />
+              
                   <PrivateRoute exact path='/chip' component={Chip} />
                   <PrivateRoute exact path='/store' component={Store} />
                  
