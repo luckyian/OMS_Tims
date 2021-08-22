@@ -10,8 +10,9 @@ import AddChipsModal from './Add_Chip_Modal/AddChipModal.js'
 import DeleteChipModal from './Delete_Chip_Modal/DeleteChipModal.js'
 import AddChipBtn from './Add_Chip_Btn/AddChipBtn.js'
 import RemoveChipBtn from './Remove_Chip_Btn/RemoveChipBtn.js'
-import SelectStoreDropdown from './Select_Store_Dropdown/SelectStoreDropDown.js'
+// import SelectStoreDropDown from './Select_Store_DropDown/SelectStoreDropDown.js'
 import StoreChipsDisplay from './Store_Chips_Display/StoreChipsDisplay.js'
+import SelectStoreDropDown from '../Select_Store_DropDown/SelectStoreDropDown.js'
 // 
 
 export default function Store() {
@@ -50,7 +51,7 @@ export default function Store() {
                 <br />
             </Container> */}
 
-            <SelectStoreDropdown setSelectedStore={setSelectedStore}></SelectStoreDropdown>
+            <SelectStoreDropDown setSelectedStore={setSelectedStore}></SelectStoreDropDown>
 
             <AddChipsModal show={showChipsModal} setShow={setShowChipsModal} setChipError={setError} />
             {/* <AddOrder show={showDoseModal} setShow={setShowDoseModal} setChipError={setError} /> */}
