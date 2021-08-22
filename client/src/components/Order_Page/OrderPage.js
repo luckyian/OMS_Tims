@@ -5,6 +5,7 @@ import OrderNameInput from './Order_Name_Input/OrderNameInput.js'
 import AddStoreBtn from './Add_Store_Btn/AddStoreBtn.js'
 import CancelOrderBtn from './Cancel_Order_Btn/CancelOrderBtn.js'
 import SaveOrderBtn from './Save_Order_Btn/SaveOrderBtn.js'
+import NavbarComponent from '../SharedComponents/Navbar.js'
 // 
 
 export default function OrderPage() {
@@ -13,6 +14,7 @@ export default function OrderPage() {
 
     return (
         <div>
+            <NavbarComponent/>
             <OrderNameInput/>
 
             <AddStoreBtn setCards={setCards} cards={cards}/>
