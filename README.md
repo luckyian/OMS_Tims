@@ -1,29 +1,37 @@
-# The Glucose Guardian Application
+# Jeff and Ashley's OMS 
+  !["Unlicense/Other"](https://img.shields.io/badge/license-Unlicense-blue.svg)
 
-## About This Boilerplate
+  ## **Table of Contents**
+  1. [Description](#Description)
+  2. [Technology](#Technology)
+  3. [Usage](#Usage)
+  4. [License](#License)
+  5. [Contributors](#Contributors)
+  6. [Questions](#Questions)
+  
+  > ## **Description**
+  ### An order management system that stores a chip master list, has a list of user inputed stores, uses both of these lists to generate an order form.  The order form, once completed, creates a pick list(delivery order fullfillment), and saves to a remote database that can be accessed either through local storage or server storage.  Also allows for editing of chips and stores list, and has user preference editing tools
+ 
+  > ## **Installation**
+  ### React, HTML, CSS, Javascript, nodejs, express, firebase, MongoDB, Heroku
+ 
+  > ## **Usage**
+  ### ![Jeff and Ashley's OMS]()
 
-This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
+  > ## **License**
+  ### You have choosen the Unlicense/Other license.  For further information on licenses please visit [Choose a License](https://choosealicense.com/)
+  
+  > ## **Contributors**
+  ### Ian Wren & Mykel Valadez
+ 
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
 
-## Starting the app locally
+  > ### *Questions?*
+   
+  #### GitHub: [LuckyIan81](https://github.com/LuckyIan81) 
+  #### Github Repo: [Jeff and Ashley's OMS] (https://github.com/LuckyIan81/https://github.com/luckyian/OMS_Tims)
+   
 
-Start by installing front and backend dependencies. While in this directory, run the following command:
 
-```
-npm install
-```
+  
 
-This should install node modules within the server and the client folder.
-
-After both installations complete, run the following command in your terminal:
-
-```
-npm start
-```
-
-Your app should now be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
-
-## Deployment (Heroku)
-
-To deploy, simply add and commit your changes, and push to Heroku. As is, the NPM scripts should take care of the rest.
