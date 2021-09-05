@@ -5,8 +5,12 @@ const chipsController = require('../../controller/chipsController')
 
 // api/chips
 router.route("/")
-    .delete(chipsController.removeChip)
+    // old code that might be needed later
+    // .delete(chipsController.removeChip)
     // .post(chipsController.addNewChip)
+    // 
+
+
 
     // this code was made to work with the flat file json
     // this will send a json file with all the chips data 
@@ -30,6 +34,19 @@ router.route("/")
             res.status("200")
         })
     })  
+    .delete((req, res) => {
+        // writes a new file (path, data, callback)
+        // req should be a formatted object the contains all the chips that are to be kept
+        fs.writeFile(path.join(__dirname, "./schema/chips.json"), JSON.stringify(req), err => {
+            if(err){
+                console.log(err)
+                res.status("500")
+            }
+
+            res.status("200")
+        })
+    })
+    // 
 
 
 
