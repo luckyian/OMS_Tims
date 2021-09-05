@@ -12,7 +12,7 @@ import AddChipBtn from './Add_Chip_Btn/AddChipBtn.js'
 import RemoveChipBtn from './Remove_Chip_Btn/RemoveChipBtn.js'
 // import SelectStoreDropDown from './Select_Store_DropDown/SelectStoreDropDown.js'
 import StoreChipsDisplay from './Store_Chips_Display/StoreChipsDisplay.js'
-import SelectStoreDropDown from '../Select_Store_DropDown/SelectStoreDropDown.js'
+import SelectStoreDropDown from '../Select_Store_Dropdown/SelectStoreDropDown.js'
 // 
 
 export default function Store() {
