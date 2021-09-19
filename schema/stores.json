@@ -1,83 +1,83 @@
 [
 
 {
-    "name": "s1",
+    "name": "FM122",
     "id": 0
 },
 {
-    "name": "s2",
+    "name": "FM608",
     "id": 1
 },
 {
-    "name": "s3",
+    "name": "S488",
     "id": 2
 },
 {
-    "name": "s4",
+    "name": "S1143",
     "id": 3
 },
 {
-    "name": "s5",
+    "name": "S1586",
     "id": 4
 },
 {
-    "name": "s6",
+    "name": "S1477",
     "id": 5
 },
 {
-    "name": "s7",
+    "name": "A3408",
     "id": 6
 },
 {
-    "name": "s8",
+    "name": "Q811",
     "id": 7
 },
 {
-    "name": "s9",
+    "name": "Q866",
     "id": 8
 },
 {
-    "name": "s10",
+    "name": "Q872",
     "id": 9
 },
 {
-    "name": "s11",
+    "name": "Q891",
     "id": 10
 },
 {
-    "name": "s12",
+    "name": "Grocery Outlet",
     "id": 11
 },
 {
-    "name": "s13",
+    "name": "Kens",
     "id": 12
 },
 {
-    "name": "s14",
+    "name": "Ballard Market",
     "id": 13
 },
 {
-    "name": "s15",
+    "name": "Target",
     "id": 14
 },
 {
-    "name": "s16",
+    "name": "Bart Magnolai",
     "id": 15
 },
 {
-    "name": "s17",
+    "name": "Bart Ballard",
     "id": 16
 },
 {
-    "name": "s18",
+    "name": "Bart Greenwood",
     "id": 17
 },
 {
-    "name": "s19",
+    "name": "Met Magnolia",
     "id": 18
 },
 {
-    "name": "s20",
+    "name": "Met Sandpoint",
     "id": 19
 }
 
