@@ -21,7 +21,7 @@ export default function Chip() {
     const [showDeleteModal, setShowDeleteModal] = useState(false);
     const [error, setError] = useState(false)
     const [reconnect, setReconnect] = useState(false)
-
+    var chips = []
     const chipsArr = Local.getChipArr()
 
     const handleShowChipsModal = () => setShowChipsModal(true);
