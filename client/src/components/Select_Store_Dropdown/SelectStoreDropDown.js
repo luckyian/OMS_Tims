@@ -8,11 +8,13 @@ export default function SelectStoreDropDown({setSelectedStore}) {
 
     const storeRef = useRef()
     let possibleStores
+    // let possibleStores = stores
 
     // attempt to get data from indexedDB
     // If it fails make possibleStores empty so the page still renders
     try{
         possibleStores = Local.getStoresArr()
+        // possibleStores = Local.stores
     }
     catch(e){
         console.log("unable to get stores form local", e)
