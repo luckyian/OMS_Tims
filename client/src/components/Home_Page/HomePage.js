@@ -26,6 +26,7 @@ export default function HomePage() {
                 API.newUserCreate(currentUser.uid)
                     .then((info) => {
                         Local.setStores(info.data.stores)
+                        // this function needs to change possibly
                         Local.setChipArr(info.data.chips)
                         Local.setOrderArr(info.data.orders)
                     })
@@ -35,6 +36,7 @@ export default function HomePage() {
             } else {
 
                 Local.setStores(data.stores)
+                // this function needs to change possibly
                 Local.setChipArr(data.chips)
                 Local.setOrderArr(data.orders)
 
