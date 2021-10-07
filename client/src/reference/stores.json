@@ -6,6 +6,7 @@
 },
 {
     "name": "FM608",
+    "chips":[],
     "id": 1
 },
 {
@@ -61,7 +62,7 @@
     "id": 14
 },
 {
-    "name": "Bart Magnolai",
+    "name": "Bart Magnolia",
     "id": 15
 },
 {
