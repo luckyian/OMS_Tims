@@ -6,7 +6,7 @@ import ChipsModal from './Stores_Page/Add_Chip_Modal/AddChipModal'
 import AddOrder from './chipsSubComps/modals/AddOrderModal'
 import DeleteChipModal from './Stores_Page/Delete_Chip_Modal/DeleteChipModal'
 import Local from '../utils/localStorage'
-import chips from '../../../schema/chips.json'
+import chips from '../reference/chips.json'
 // import FooterComp from './SharedComponents/Footer'
 // import LineChart from './chipsSubComps/testchipChart'
 

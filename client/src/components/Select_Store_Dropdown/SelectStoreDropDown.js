@@ -1,7 +1,7 @@
 import React, {useRef} from 'react'
 import { Form } from 'react-bootstrap'
-import stores from '../../../../schema/stores.json'
-import chips from '../../../../schema/chips.json'
+import stores from '../../reference/stores.json'
+import chips from '../../reference/chips.json'
 // import Local from '../../../utils/localStorage'
 import Local from '../../utils/localStorage'
 export default function SelectStoreDropDown({setSelectedStore}) {
