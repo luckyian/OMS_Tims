@@ -2,6 +2,7 @@
 
 {
     "name": "FM122",
+    "chips":[],
     "id": 0
 },
 {
@@ -11,74 +12,92 @@
 },
 {
     "name": "S488",
+    "chips":[],
     "id": 2
 },
 {
     "name": "S1143",
+    "chips":[],
     "id": 3
 },
 {
     "name": "S1586",
+    "chips":[],
     "id": 4
 },
 {
     "name": "S1477",
+    "chips":[],
     "id": 5
 },
 {
     "name": "A3408",
+    "chips":[],
     "id": 6
 },
 {
     "name": "Q811",
+    "chips":[],
     "id": 7
 },
 {
     "name": "Q866",
+    "chips":[],
     "id": 8
 },
 {
     "name": "Q872",
+    "chips":[],
     "id": 9
 },
 {
     "name": "Q891",
+    "chips":[],
     "id": 10
 },
 {
     "name": "Grocery Outlet",
+    "chips":[],
     "id": 11
 },
 {
     "name": "Kens",
+    "chips":[],
     "id": 12
 },
 {
     "name": "Ballard Market",
+    "chips":[],
     "id": 13
 },
 {
     "name": "Target",
+    "chips":[],
     "id": 14
 },
 {
     "name": "Bart Magnolia",
+    "chips":[],
     "id": 15
 },
 {
     "name": "Bart Ballard",
+    "chips":[],
     "id": 16
 },
 {
     "name": "Bart Greenwood",
+    "chips":[],
     "id": 17
 },
 {
     "name": "Met Magnolia",
+    "chips":[],
     "id": 18
 },
 {
     "name": "Met Sandpoint",
+    "chips":[],
     "id": 19
 }
 
