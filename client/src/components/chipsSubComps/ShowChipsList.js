@@ -20,6 +20,7 @@ export default function ShowChipList() {
           // Correct! Key should be specified inside the array.
           <ListItem key={id.toString()} value={name} />
         );
+      }
         return (
     
 <div>
@@ -27,8 +28,8 @@ export default function ShowChipList() {
     <ul>
       {chipItems}
     </ul>
-  );
-}
+  
+
 {/* 
     return (
         <Form id="store-form">
@@ -42,5 +43,5 @@ export default function ShowChipList() {
     ) */}
 
 </div>
-    )
+  );
 }
