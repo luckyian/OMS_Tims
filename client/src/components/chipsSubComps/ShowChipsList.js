@@ -21,6 +21,7 @@ export default function ShowChipList() {
           <ListItem key={id.toString()} value={name} />
         );
       }
+      
         return (
     
 <div>
