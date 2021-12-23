@@ -1,9 +1,10 @@
-import React, {useRef} from 'react'
+import React, {ListItem, useRef} from 'react'
 import { Form } from 'react-bootstrap'
 import stores from '../../reference/stores.json'
 import chips from '../../reference/chips.json'
 // import Local from '../../../utils/localStorage'
 import Local from '../../utils/localStorage'
+
 export default function ShowChipList() {
 
 
@@ -18,7 +19,7 @@ export default function ShowChipList() {
         // const numbers = props.numbers;
         const chipItems = allChips.map((chip) =>
           // Correct! Key should be specified inside the array.
-          <ListItem key={id.toString()} value={name} />
+          <ListItem key={chip._id.toString()} value={chip.name} />
         );
       }
       
@@ -27,7 +28,7 @@ export default function ShowChipList() {
 <div>
 
     <ul>
-      {chipItems}
+      {ChipsList}
     </ul>
   
 
