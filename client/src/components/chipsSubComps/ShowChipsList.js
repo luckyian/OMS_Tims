@@ -47,3 +47,57 @@ export default function ShowChipList() {
 </div>
   );
 }
+
+// import {React, FlatList} from 'react'
+// import { SafeAreaView, View, Text, StyleSheet, ScrollView } from 'react-native'
+// import GlobalStyles from '../../Styles/GlobalStyles'
+// import { useData } from '../../FirebaseStuff/DataContext'
+// import { useAuth } from '../../FirebaseStuff/AuthContext'
+// import { Card, ListItem } from 'react-native-elements'
+
+// export default function MedsList() {
+//     const { currentUser, logout } = useAuth()
+//     const { medsArray } = useData()
+//     const medsArrayC = [...medsArray]
+//     const styles = StyleSheet.create({
+//         medsStyle: {
+//             fontSize: 30,
+//             paddingBottom: 25,
+//             borderRadius: 5,
+//             alignItems: "center",
+
+//         },
+//         cardStyle: {
+
+//         }
+
+//     })
+//     function convert(timestamp) {
+//         var date = new Date(
+//             parseInt(
+//                 timestamp
+//             )
+//         );
+//     }
+
+//     keyExtractor = (medsArrayC, index) => index.toString();
+
+//     renderItem = ({ medsArrayC }) => (
+//         <ListItem bottomDivider>
+
+//             <ListItem.Content>
+//                 <ListItem.Title>{med.medicine}</ListItem.Title>
+//                 <ListItem.Subtitle>{med.dosage}</ListItem.Subtitle>
+//             </ListItem.Content>
+
+//         </ListItem>
+//     );
+
+//     // render() {
+//         return (
+//             <FlatList
+//                 keyExtractor={medsArrayC.keyExtractor}
+//                 data={medsArrayC}
+//                 renderItem={medsArrayC.renderItem}
+//             />
+//         )
