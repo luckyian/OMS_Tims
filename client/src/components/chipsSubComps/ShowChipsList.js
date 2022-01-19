@@ -5,7 +5,7 @@ import chips from '../../reference/chips.json'
 // import Local from '../../../utils/localStorage'
 import Local from '../../utils/localStorage'
 
-export default function ShowChipList() {
+export default function ShowChipList(props) {
 
 
     const chipsRef = useRef()
@@ -15,7 +15,7 @@ export default function ShowChipList() {
         return <li>{props.name}</li>;
       }
       
-      function ChipsList(props) {
+    function ChipsList(props) {
         // const numbers = props.numbers;
         const chipItems = allChips.map((chip) =>
           // Correct! Key should be specified inside the array.
@@ -27,9 +27,9 @@ export default function ShowChipList() {
     
 <div>
 
-    <ul>
+    <li>
       {ChipsList}
-    </ul>
+    </li>
   
 
 {/* 
