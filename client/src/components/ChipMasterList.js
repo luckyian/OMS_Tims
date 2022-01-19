@@ -7,6 +7,7 @@ import AddOrder from './chipsSubComps/modals/AddOrderModal'
 import DeleteChipModal from './Stores_Page/Delete_Chip_Modal/DeleteChipModal'
 import Local from '../utils/localStorage'
 import chips from '../reference/chips.json'
+import ShowChipList from './chipsSubComps/ShowChipsList'
 // import FooterComp from './SharedComponents/Footer'
 // import LineChart from './chipsSubComps/testchipChart'
 
@@ -58,7 +59,7 @@ export default function Chip() {
                 <br />
 
                 <Container>
-                
+                <ShowChipList/>
                 </Container>
 
 
