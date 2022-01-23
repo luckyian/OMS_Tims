@@ -36,7 +36,7 @@ let possibleChips = chips
 //     }
 
 const listItems = possibleChips.map((chip) =>
-  <li>{chip.name} // {chip.sku}</li>
+  <li>{chip.name} // sku: {chip.sku}</li>
 );
 return (
   
