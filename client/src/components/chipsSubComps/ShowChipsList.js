@@ -4,6 +4,7 @@ import stores from '../../reference/stores.json'
 import chips from '../../reference/chips.json'
 // import Local from '../../../utils/localStorage'
 import Local from '../../utils/localStorage'
+import './chipList.css'
 
 export default function ShowChipList(props) {
 
@@ -36,7 +37,7 @@ let possibleChips = chips
 //     }
 
 const listItems = possibleChips.map((chip) =>
-  <li>{chip.name} // sku: {chip.sku}</li>
+  <ul id="chipList">{chip.name} // sku: {chip.sku}</ul>
 );
 return (
   
