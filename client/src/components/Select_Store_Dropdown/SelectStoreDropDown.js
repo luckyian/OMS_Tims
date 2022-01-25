@@ -1,9 +1,10 @@
 import React, {useRef} from 'react'
-import { Form } from 'react-bootstrap'
+import { Form, Container } from 'react-bootstrap'
 import stores from '../../reference/stores.json'
 import chips from '../../reference/chips.json'
 // import Local from '../../../utils/localStorage'
 import Local from '../../utils/localStorage'
+import './selectStore.css'
 export default function SelectStoreDropDown({setSelectedStore}) {
 
     const storeRef = useRef()
@@ -35,13 +36,19 @@ export default function SelectStoreDropDown({setSelectedStore}) {
     }
 
     return (
+        // <div class="container-fluid">
+        
+        // <div class="col-sm-8">
         <Form id="store-form">
             <Form.Group id="store-form-group">
                 <Form.Label id="store-form-label">Select a Store</Form.Label>
-                <Form.Control as="select" ref={storeRef} onChange={HandleStoreChange}>
+                <Form.Control id="droppy-boi" as="select" ref={storeRef} onChange={HandleStoreChange}>
                     {possibleStores.map(store => (<option key={store._id}>{store.name}</option>))}
                 </Form.Control>
             </Form.Group>
         </Form>
+        // </div>
+        
+        // </div>
     )
 }

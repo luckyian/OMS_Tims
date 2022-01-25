@@ -1,0 +1,19 @@
+#store-form{
+    width: 60%;
+    border: 2rem;
+    padding: 5%;
+    text-align: center;
+    font-family: "Times New Roman";
+    font-weight: bold;
+    font-size: 40px;
+}
+#droppy-boi{
+    text-align: center;
+    font-family: "Times New Roman";
+    font-weight: bold;
+    font-size: 40px;
+
+}
+.container-fluid{
+align-items: center;
+}
