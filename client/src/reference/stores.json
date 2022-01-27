@@ -2,7 +2,17 @@
 
 {
     "name": "FM122",
-    "chips":[],
+    "chips":[{"name" : "2oz Original",  
+        "sku" : "20213",
+        "id": 0}, 
+        
+        {"name" : "2oz Jalapeno",  
+        "sku" : "20209",
+        "id": 1},
+        
+        {"name" : "2oz SC&O",  
+        "sku" : "20215",
+        "id": 2}],
     "id": 0
 },
 {
