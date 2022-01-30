@@ -1,11 +1,13 @@
 import React from 'react'
 
 export default function StoreChipsDisplay({chips}) {
+  
+   
     return (
         <div>
-            {chips.map(chip => 
+            {chips?.map((chip) => 
                 <div>
-                    <p>{chip.name+chip.sku}</p>
+                    <p>{chips.name+chips.sku}</p>
                 </div>   
             )}
         </div>
