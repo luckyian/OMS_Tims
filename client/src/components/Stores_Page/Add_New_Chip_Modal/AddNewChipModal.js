@@ -7,7 +7,7 @@ import chips from '../../../reference/chips.json'
 // chipNameRef = medNameRef
 // potentialChips = potentialMeds
 
-export default function ChipsModal(props) {
+export default function NewChipsModal(props) {
 
     const [needText, setNeedText] = useState()
     const [modalError, setModalError] = useState()
@@ -260,20 +260,26 @@ export default function ChipsModal(props) {
         centered
         >
         <Modal.Header closeButton>
-            <Modal.Title>Add Chips</Modal.Title>
+            <Modal.Title>Add New Chips</Modal.Title>
         </Modal.Header>
         <Modal.Body>
         {modalError && <Alert variant="danger">{modalError}</Alert>}
             <Form>
+                
+
+                
+                
                 <Form.Group>
-                    <Form.Label>Chip Name</Form.Label>
-                    <Form.Control as="select" ref={chipNameRef} onChange={needTextBox}>
-                        {potentialChips.map(chip => (<option key={chip.name}>{chip.name}</option>))}
-                        <option>Other</option>
+                    <Form.Label>Enter In Other Chip Name</Form.Label>
+                    <Form.Control type='text' ref={otherNameRef} placeholder="Chip Name"/>
+                </Form.Group>
+               
+
+                <Form.Group>
+                    <Form.Label>Sku</Form.Label>
+                    <Form.Control type='text' ref={chipNameRef} placeholder="Chip Sku">
                     </Form.Control>
                 </Form.Group>
-
-               
             </Form>
             {/* if there are multiple chips being added then display those chips here */}
             {chipsToAdd && (
