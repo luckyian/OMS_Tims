@@ -7,8 +7,10 @@ import Local from '../../utils/localStorage'
 // components that get rendered
 import NavbarComponent from '../SharedComponents/Navbar'
 import AddChipsModal from './Add_Chip_Modal/AddChipModal.js'
+import AddNewChipsModal from './Add_New_Chip_Modal/AddNewChipModal.js'
 import DeleteChipModal from './Delete_Chip_Modal/DeleteChipModal.js'
 import AddChipBtn from './Add_Chip_Btn/AddChipBtn.js'
+import AddNewChipBtn from './Add_New _Chip_Btn/AddNewChipBtn.js'
 import RemoveChipBtn from './Remove_Chip_Btn/RemoveChipBtn.js'
 // import SelectStoreDropDown from './Select_Store_DropDown/SelectStoreDropDown.js'
 import StoreChipsDisplay from './Store_Chips_Display/StoreChipsDisplay.js'
@@ -20,6 +22,7 @@ export default function Store() {
     // const { currentUser } = useAuth()
     const [selectedStore, setSelectedStore] = useState(false)
     const [showChipsModal, setShowChipsModal] = useState(false)
+    const [showNewChipsModal, setShowNewChipsModal] = useState(false)
     // const [showDoseModal, setShowDoseModal] = useState(false);
     const [showDeleteModal, setShowDeleteModal] = useState(false);
     const [error, setError] = useState(false)
@@ -54,6 +57,7 @@ export default function Store() {
             <SelectStoreDropDown setSelectedStore={setSelectedStore}></SelectStoreDropDown>
 
             <AddChipsModal show={showChipsModal} setShow={setShowChipsModal} setChipError={setError} />
+            <AddNewChipsModal show={showNewChipsModal} setShow={setShowNewChipsModal} setChipError={setError} />
             {/* <AddOrder show={showDoseModal} setShow={setShowDoseModal} setChipError={setError} /> */}
             <DeleteChipModal show={showDeleteModal} setShow={setShowDeleteModal} setChipError={setError} selectedStore={selectedStore}/>
 
@@ -62,6 +66,7 @@ export default function Store() {
                 <>
                     <StoreChipsDisplay chips={selectedStore.chips}/>
                     <AddChipBtn setShowChipsModal={setShowChipsModal}/>
+                    <AddNewChipBtn setShowNewChipsModal={setShowNewChipsModal}/>
                     <RemoveChipBtn 
                     setShowDeleteModal={setShowDeleteModal} 
                     selectedStore={selectedStore}
