@@ -260,7 +260,7 @@ export default function ChipsModal(props) {
         centered
         >
         <Modal.Header closeButton>
-            <Modal.Title>Add New Chips</Modal.Title>
+            <Modal.Title>Add Chips</Modal.Title>
         </Modal.Header>
         <Modal.Body>
         {modalError && <Alert variant="danger">{modalError}</Alert>}
@@ -273,19 +273,7 @@ export default function ChipsModal(props) {
                     </Form.Control>
                 </Form.Group>
 
-                {/* this shows up when adding in a new item */}
-                {needText && (
-                <Form.Group>
-                    <Form.Label>Enter In Other Chip Name</Form.Label>
-                    <Form.Control type='text' ref={otherNameRef} placeholder="Chip Name"/>
-                </Form.Group>
-                )}
-
-                <Form.Group>
-                    <Form.Label>Sku</Form.Label>
-                    <Form.Control type='text' ref={chipNameRef} placeholder="Chip Sku">
-                    </Form.Control>
-                </Form.Group>
+               
             </Form>
             {/* if there are multiple chips being added then display those chips here */}
             {chipsToAdd && (
