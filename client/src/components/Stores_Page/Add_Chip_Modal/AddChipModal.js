@@ -198,14 +198,14 @@ export default function ChipsModal(props) {
     }
 
     // lets the user know that they need to put in a valid chip
-    function needTextBox() {
-        if(chipNameRef.current.value === "Other") {
-            setNeedText(true)
-        } else {
-            setModalError('')
-            setNeedText(false)
-        }
-    }
+    // function needTextBox() {
+    //     if(chipNameRef.current.value === "Other") {
+    //         setNeedText(true)
+    //     } else {
+    //         setModalError('')
+    //         setNeedText(false)
+    //     }
+    // }
 
     function handleAddChip() {
 
