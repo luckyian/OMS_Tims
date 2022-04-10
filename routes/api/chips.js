@@ -15,7 +15,7 @@ router.route("/")
     // this code was made to work with the flat file json
     // this will send a json file with all the chips data 
     .get((req, res) => {
-        res.json(path.join(__dirname, "./schema/chips.json"))
+        res.json(path.join(__dirname, "./schema/reference/chips.json"))
 
     })
     // this will replace the json db with a newly written db
