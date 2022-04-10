@@ -20,12 +20,12 @@ router.route("/")
     })
     // this will replace the json db with a newly written db
     .post((req, res) => {
-        let chips = require(path.join(__dirname, "./schema/chips.json"))
+        let chips = require(path.join(__dirname, "./schema/reference/chips.json"))
         // the request here should be an object formatted the same as the db 
         chips.push(req)
 
         // writes a new file (path, data, callback)
-        fs.writeFile(path.join(__dirname, "./schema/chips.json"), JSON.stringify(chips), err => {
+        fs.writeFile(path.join(__dirname, "./schema/reference/chips.json"), JSON.stringify(chips), err => {
             if(err){
                 console.log(err)
                 res.status("500")
@@ -37,7 +37,7 @@ router.route("/")
     .delete((req, res) => {
         // writes a new file (path, data, callback)
         // req should be a formatted object the contains all the chips that are to be kept
-        fs.writeFile(path.join(__dirname, "./schema/chips.json"), JSON.stringify(req), err => {
+        fs.writeFile(path.join(__dirname, "./schema/reference/chips.json"), JSON.stringify(req), err => {
             if(err){
                 console.log(err)
                 res.status("500")
