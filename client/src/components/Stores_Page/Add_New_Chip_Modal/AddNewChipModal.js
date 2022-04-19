@@ -3,7 +3,7 @@ import { Button, Form, Modal, Alert } from 'react-bootstrap'
 import Local from '../../../utils/localStorage'
 import API from '../../../utils/API'
 import { useAuth } from '../../../contexts/AuthContext'
-import chips from '../../../reference/chips.json'
+import chips from '../../../../src/reference/chips.json'
 // chipNameRef = medNameRef
 // potentialChips = potentialMeds
 
