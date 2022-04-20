@@ -1,0 +1,655 @@
+[
+
+{"name" : "2oz Original",  
+"sku" : "20213",
+"id": 0}, 
+
+{"name" : "2oz Jalapeno",  
+"sku" : "20209",
+"id": 1},
+
+{"name" : "2oz SC&O",  
+"sku" : "20215",
+"id": 2},
+
+{"name" : "2oz SS&V",  
+"sku" : "20214",
+"id": 3},
+
+{"name" : "2oz Haw Maui Onion",  
+"sku" : "20211",
+"id": 4},
+
+{"name" : "2oz Haw Luau BBQ",  
+"sku" : "20212",
+"id": 5},
+
+{"name" : "5oz Original",  
+"sku" : "01007",
+"id": 6},
+
+{"name" : "5oz Jalapeno",  
+"sku" : "02007",
+"id": 7},
+
+{"name" : "5oz SS&V",  
+"sku" : "09006",
+"id": 8},
+
+{"name" : "5oz Haw Mango Habanero",  
+"sku" : "00504",
+"id": 9},
+
+{"name" : "5oz Haw Maui Onion",  
+"sku" : "00503",
+"id": 10},
+
+{"name" : "5oz Haw Luau BBQ",  
+"sku" : "00502",
+"id": 11},
+
+{"name" : "7.5oz Vlasic Dill Pickle",  
+"sku" : "10043",
+"id": 12},
+
+{"name" : "7.5oz Honey BBQ",  
+"sku" : "10046",
+"id": 13},
+
+{"name" : "7.5oz Haw Mango Habanero",  
+"sku" : "10044",
+"id": 14},
+
+{"name" : "7.5oz Haw Maui Onion",  
+"sku" : "10051",
+"id": 15},
+
+{"name" : "7.5oz Haw Luau BBQ",  
+"sku" : "10052",
+"id": 16},
+
+{"name" : "7.5oz Original",  
+"sku" : "10053",
+"id": 17},
+
+{"name" : "7.5oz Jalapeno",  
+"sku" : "10054",
+"id": 18},
+
+{"name" : "7.5oz SS&V",  
+"sku" : "10055",
+"id": 19},
+
+{"name" : "7.5oz Haw Swt & Tng Ginger",  
+"sku" : "10060",
+"id": 20},
+
+{"name" : "7.5oz SC&O",  
+"sku" : "10057",
+"id": 21},
+
+{"name" : "7.5oz Unsalted",  
+"sku" : "10056",
+"id": 22},
+
+{"name" : "7.5oz Parmesan Garlic",  
+"sku" : "10059",
+"id": 23},
+
+{"name" : "7.5oz Tims SB Cajun Chip",  
+"sku" : "00000",
+"id": 24},
+
+{"name" : "7.5oz Haw SB Wasabi Chip",  
+"sku" : "00000",
+"id": 25},
+
+{"name" : "7.5oz Thins Sea Salt",  
+"sku" : "75200",
+"id": 26},
+
+{"name" : "7.5oz Thins Jalapeno",  
+"sku" : "75100",
+"id": 27},
+
+{"name" : "7.5oz Smoked Gouda",  
+"sku" : "75300",
+"id": 28},
+
+{"name" : "7oz Waves Luau BBQ",  
+"sku" : "29329",
+"id": 29},
+
+{"name" : "7oz Waves Maui Onion",  
+"sku" : "29330",
+"id": 30},
+
+{"name" : "7oz Waves Sea Salt",  
+"sku" : "29331",
+"id": 31}, 
+
+{"name" : "16oz Tims Orig",  
+"sku" : "16002",
+"id": 32},
+
+{"name" : "16oz Tims Jalapeno",  
+"sku" : "16003",
+"id": 33},
+
+{"name" : "16oz Tims SS&V",  
+"sku" : "16004",
+"id": 34},
+
+{"name" : "16oz Haw Orig",  
+"sku" : "16005",
+"id": 35},
+
+{"name" : "16oz Haw Maui Onion",  
+"sku" : "16006",
+"id": 36},
+
+{"name" : "16oz Haw Luau BBQ",  
+"sku" : "16007",
+"id": 37},
+
+{"name" : "4oz Haw Maui Onion",  
+"sku" : "40401",
+"id": 38},
+
+{"name" : "4oz Haw Luau BBQ Ring",  
+"sku" : "40503",
+"id": 39},
+
+{"name" : "4oz Haw Ring of Fire",  
+"sku" : "40504",
+"id": 40},
+
+{"name" : "1.5oz Erins Orig PC",  
+"sku" : "00111",
+"id": 41},
+
+{"name" : "1.5oz Erins Low Salt PC",  
+"sku" : "11993",
+"id": 42},
+
+{"name" : "5.5oz Erins Orig PC",  
+"sku" : "55055",
+"id": 43},
+
+{"name" : "5.5oz Erins Red Sodium PC",  
+"sku" : "55075",
+"id": 44},
+
+{"name" : "5.5oz Erins White Chedder PC",  
+"sku" : "55010",
+"id": 45},
+
+{"name" : "VP 1.5oz Tims Box",  
+"sku" : "48015",
+"id": 46},
+
+{"name" : "VP 1.5oz Hawaiian Box",  
+"sku" : "30001",
+"id": 47},
+
+{"name" : "LJ 5.5oz Jalapeno Lime",  
+"sku" : "00023",
+"id": 48},
+
+{"name" : "LJ 5.5oz Red Pepper Veggie",  
+"sku" : "02139",
+"id": 49},
+
+{"name" : "LJ 6oz SS Seashore",  
+"sku" : "00056",
+"id": 50},
+
+{"name" : "LJ 5.5oz Sweet Potato",  
+"sku" : "00087",
+"id": 51},
+
+{"name" : "LJ 11oz Chia/Quinoa",  
+"sku" : "00028",
+"id": 52},
+
+{"name" : "LJ 11oz SS Rest",  
+"sku" : "00029",
+"id": 53},
+
+{"name" : "LJ 11oz SS & Lime",  
+"sku" : "00027",
+"id": 54},
+
+{"name" : "LJ 11oz Jal Lime",  
+"sku" : "02121",
+"id": 55},
+
+{"name" : "LJ 5.5oz No Grain SS",  
+"sku" : "02089",
+"id": 56},
+
+{"name" : "LJ 5.5oz No Grain SS & Lime",  
+"sku" : "02090",
+"id": 57},
+
+{"name" : "LJ 5oz BBQ Pot",  
+"sku" : "02082",
+"id": 58},
+
+{"name" : "LJ 5oz Sea Salt Pot",  
+"sku" : "02080",
+"id": 59},
+
+{"name" : "LJ 5oz SS & V Pot",  
+"sku" : "02081",
+"id": 60},
+
+{"name" : "LJ 8oz Blue Corn Dippers",  
+"sku" : "02015",
+"id": 61},
+
+{"name" : "LJ 8oz White Corn Dippers",  
+"sku" : "02016",
+"id": 62},
+
+{"name" : "LJ 5.5oz Korean BBQ",  
+"sku" : "02068",
+"id": 63},
+
+{"name" : "LJ 15.5oz Verde Salsa",  
+"sku" : "02048",
+"id": 64},
+
+{"name" : "LJ 15.5oz Mild Salsa",  
+"sku" : "02046",
+"id": 65},
+
+{"name" : "LJ 15.5oz Medium Salsa",  
+"sku" : "02047",
+"id": 66},
+
+{"name" : "LJ 5oz Org Mini PB Sandwich",  
+"sku" : "00700",
+"id": 67},
+
+{"name" : "LJ 6oz Org Chia & Quinoa Cracker",  
+"sku" : "21283",
+"id": 68},
+
+{"name" : "LJ 6oz Org Classic Cracker",  
+"sku" : "00205",
+"id": 69},
+
+{"name" : "LJ 5oz Org Mini ChedChz Sandwich",  
+"sku" : "00809",
+"id": 70},
+
+{"name" : "GH 6.25oz SS Veggie Stix",  
+"sku" : "00511",
+"id": 71},
+
+{"name" : "GH 6.25oz Veggie Chips",  
+"sku" : "00515",
+"id": 72},
+
+{"name" : "Herdez 4.625oz Chili Lime Pork Rinds",  
+"sku" : "85492",
+"id": 73},
+
+{"name" : "Herdez 4.625oz Hot Pork Rinds",  
+"sku" : "85493",
+"id": 74},
+
+{"name" : "Herdez 4.625oz Reg Pork Rinds",  
+"sku" : "85490",
+"id": 75},
+
+{"name" : "Zapps 5oz Cajun Craw",  
+"sku" : "07003",
+"id": 76},
+
+{"name" : "Zapps 5oz Evil Eye",  
+"sku" : "06178",
+"id": 77},
+
+{"name" : "Zapps 5oz Voodoo",  
+"sku" : "07017",
+"id": 78},
+
+{"name" : "Torts 12.5oz Rest Style",  
+"sku" : "41000",
+"id": 79},
+
+{"name" : "Torts 12.5oz Cantina Style",  
+"sku" : "41001",
+"id": 80},
+
+{"name" : "Torts Blue Corn",  
+"sku" : "41006",
+"id": 81},
+
+{"name" : "Utz 23oz Cheese",  
+"sku" : "00359",
+"id": 82},
+
+{"name" : "Utz 20oz Pub Mix",  
+"sku" : "01272",
+"id": 83},
+
+{"name" : "Utz 20oz Poker Mix",  
+"sku" : "00338",
+"id": 84},
+
+{"name" : "Utz 24oz PB Filled Pretzel",  
+"sku" : "00253",
+"id": 85},
+
+{"name" : "OTB 11.5oz Guac Squeeze",  
+"sku" : "70111",
+"id": 86},
+
+{"name" : "OTB 11.5oz Med Salsa Squeeze",  
+"sku" : "70012",
+"id": 87},
+
+{"name" : "OTB 11.5oz Chdr Queso Squeeze",  
+"sku" : "80311",
+"id": 88},
+
+{"name" : "OTB 15.5oz Chdr Queso",  
+"sku" : "00000",
+"id": 89},
+
+{"name" : "OTB 16oz Mild Salsa",  
+"sku" : "00000",
+"id": 90},
+
+{"name" : "OTB 16oz Med Salsa",  
+"sku" : "00000",
+"id": 91},
+
+{"name" : "Snak 12oz Guacachip",  
+"sku" : "45034",
+"id": 92},
+
+{"name" : "Snak 12oz Salsitas",  
+"sku" : "45037",
+"id": 93},
+
+{"name" : "Snak 12oz Jalapenitos",  
+"sku" : "45068",
+"id": 94},
+
+{"name" : "Snak 6oz Org Kettle Corn",  
+"sku" : "11573",
+"id": 95},
+
+{"name" : "Snak 22oz Tort Strips Salted",  
+"sku" : "11572",
+"id": 96},
+
+{"name" : "Snak 1oz/6pk/4ct Org Lightly Salted Pop",  
+"sku" : "11670",
+"id": 97},
+
+{"name" : "Snak 8oz O Org Sea Salt Pop",  
+"sku" : "20074",
+"id": 98},
+
+{"name" : "Snak 4oz Org Wht Ched PC",  
+"sku" : "40302",
+"id": 99},
+
+{"name" : "Snak 5oz Org Lt Salted PC",  
+"sku" : "40303",
+"id": 100},
+
+{"name" : "Snak 10oz Org Yellow Tort",  
+"sku" : "40377",
+"id": 101},
+
+{"name" : "Snak 10oz Org White Tort",  
+"sku" : "40378",
+"id": 102},
+
+{"name" : "Snak 10oz Org Blue/Sesame",  
+"sku" : "40379",
+"id": 103},
+
+{"name" : "Snak 10oz Org Blue w/Flax",  
+"sku" : "40380",
+"id": 104},
+
+{"name" : "Sig Sel Cheese Crunch",  
+"sku" : "29582",
+"id": 105},
+
+{"name" : "Sig Sel Hot Cheese Crunch",  
+"sku" : "29583",
+"id": 106},
+
+{"name" : "ON 7.5oz Veggie Sticks",  
+"sku" : "11279",
+"id": 107},
+
+{"name" : "ON 7oz Veggie Chips",  
+"sku" : "11278",
+"id": 108},
+
+{"name" : "ON 7.5oz Ranch Veggie Sticks",  
+"sku" : "12250",
+"id": 109},
+
+{"name" : "ON 7.5oz Gouda & Pep Sticks",  
+"sku" : "12249",
+"id": 110},
+
+{"name" : "Juanitas 15oz Reg",  
+"sku" : "31216",
+"id": 111},
+
+{"name" : "Juanitas 11oz Chilipeno",  
+"sku" : "31311",
+"id": 112},
+
+{"name" : "Juanitas 11oz Jalapeno",  
+"sku" : "31312",
+"id": 113},
+
+{"name" : "Juanitas 11oz Sweet Chili",  
+"sku" : "31313",
+"id": 114},
+
+{"name" : "Juanitas 24oz Fiesta",  
+"sku" : "31224",
+"id": 115},
+
+{"name" : "Carmens 14oz Triangles",  
+"sku" : "00016",
+"id": 116},
+
+{"name" : "Carmens 14oz Round",  
+"sku" : "00018",
+"id": 117},
+
+{"name" : "Angies 4.8oz Sea Salt Pop",  
+"sku" : "00086",
+"id": 118},
+
+{"name" : "Angies 5oz Lightly Sweet Pop",  
+"sku" : "00069",
+"id": 119},
+
+{"name" : "Angies 7oz Sweet and Salty",  
+"sku" : "01193",
+"id": 120},
+
+{"name" : "Angies 4.4oz Butter Pop",  
+"sku" : "01503",
+"id": 121},
+
+{"name" : "Skinny 4.4oz Orig Pop",  
+"sku" : "00400",
+"id": 122},
+
+{"name" : "Skinny 4.4oz White Cheddar Pop",  
+"sku" : "00417",
+"id": 123},
+
+{"name" : "Skinny 4.4oz SS & Pepper",  
+"sku" : "00407",
+"id": 124},
+
+{"name" : "Skinny 3.9oz 100 Cal 6pk Orig Pop",  
+"sku" : "00402",
+"id": 125},
+
+{"name" : "Skinny 4.4oz Butter Pop",  
+"sku" : "02066",
+"id": 126},
+
+{"name" : "Skinny 5.3oz Vanilla Kettle Corn",  
+"sku" : "00000",
+"id": 127},
+
+{"name" : "SOH 16oz Sour Nibblers",  
+"sku" : "08004",
+"id": 128},
+
+{"name" : "SOH 16oz Old Tyme",  
+"sku" : "08005",
+"id": 129},
+
+{"name" : "SOH 16oz Mini",  
+"sku" : "08006",
+"id": 130},
+
+{"name" : "SOH 16oz Snaps",  
+"sku" : "08007",
+"id": 131},
+
+{"name" : "SOH 16oz Sticks",  
+"sku" : "08009",
+"id": 132},
+
+{"name" : "SOH 16oz Sour Hard",  
+"sku" : "08003",
+"id": 133},
+
+{"name" : "SOH 12oz Hon Must On Pcs",  
+"sku" : "08822",
+"id": 134},
+
+{"name" : "SOH 12oz Hot Puff Pcs",  
+"sku" : "08824",
+"id": 135},
+
+{"name" : "SOH 10oz PB Filled Pcs",  
+"sku" : "09208",
+"id": 136},
+
+{"name" : "SOH 12oz Cheddar Pcs",  
+"sku" : "08821",
+"id": 137},
+
+{"name" : "SOH 12oz Jalapeno Pcs",  
+"sku" : "08823",
+"id": 138},
+
+{"name" : "SOH 13.5oz Sour Hard Box",  
+"sku" : "02275",
+"id": 139},
+
+{"name" : "SOH 12oz Mini Unsalted",  
+"sku" : "03404",
+"id": 140},
+
+{"name" : "SOH 12oz Butter Snaps",  
+"sku" : "03405",
+"id": 141},
+
+{"name" : "SOH 12oz Specialty Rods",  
+"sku" : "03406",
+"id": 142},
+
+{"name" : "SOH 12oz Itty Bitty Minis",  
+"sku" : "09271",
+"id": 143},
+
+{"name" : "SOH 12oz Honey Braid",  
+"sku" : "01016",
+"id": 144},
+
+{"name" : "SOH 12oz Seasoned Twist",  
+"sku" : "09434",
+"id": 145},
+
+{"name" : "SOH 12oz Jal Ranch Twists",  
+"sku" : "09480",
+"id": 146},
+
+{"name" : "SOH 12oz Sc & Onion",  
+"sku" : "09487",
+"id": 147},
+
+{"name" : "SOH 12oz Sea Salt Rounds",  
+"sku" : "09422",
+"id": 148},
+
+{"name" : "SOH 12oz Butter Rounds",  
+"sku" : "09423",
+"id": 149},
+
+{"name" : "SOH 12oz Dipping Sticks",  
+"sku" : "34033",
+"id": 150},
+
+{"name" : "SOH 8oz GF Prtzl",  
+"sku" : "08915",
+"id": 151},
+
+{"name" : "SOH 8oz GF Sticks",  
+"sku" : "08731",
+"id": 152},
+
+{"name" : "SOH VP 1.4oz/16ct Pieces",  
+"sku" : "09431",
+"id": 153},
+
+{"name" : "Lance 12.1oz Toastchee",  
+"sku" : "90137",
+"id": 154},
+
+{"name" : "Lance VP 11.4oz Sand Cracker",  
+"sku" : "90433",
+"id": 155},
+
+{"name" : "Lance 11oz Honey PB/Capt",  
+"sku" : "52146",
+"id": 156},
+
+{"name" : "Lance 11oz Cr Ch & Chives",  
+"sku" : "52260",
+"id": 157},
+
+{"name" : "Lance VP 11oz Capt Choice",  
+"sku" : "90432",
+"id": 158},
+
+{"name" : "Lance 11oz White Cheddar Capt Choice",  
+"sku" : "90514",
+"id": 159},
+
+{"name" : "Lance 8.5oz Toastchee Mini BagBox",  
+"sku" : "90499",
+"id": 160},
+
+{"name" : "Lance 10.3oz Toasty",  
+"sku" : "90138",
+"id": 161},
+
+{"name" : "Lance 14oz lance PB Nekot",  
+"sku" : "90139",
+"id": 162}
+
+]
