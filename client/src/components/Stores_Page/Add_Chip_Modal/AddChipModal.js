@@ -267,8 +267,8 @@ export default function ChipsModal(props) {
             <Form>
                 <Form.Group>
                     <Form.Label>Chip Name</Form.Label>
-                    <Form.Control as="select" ref={chipNameRef}>
-                        {potentialChips.map(chip => (<option key={chip.name}>{chip.name}</option>))}
+                    <Form.Control as="select" ref={chipNameRef} >
+                        {potentialChips.map(chip => (<option key={chip.name && chip.sku}>{chip.name} Sku:{chip.sku}</option>))}
                         <option>Other</option>
                     </Form.Control>
                 </Form.Group>
